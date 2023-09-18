@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Functions in JAVASCRIPt</h1>
+    <p id="demo"></p>
+    <script>
+          // example-1
+        // function show(){
+        //     console.log('show function');
+        // }
+        // show();
+  // example-2
+        // const show1=()=>{
+        //     console.log('show 1 arrow function');
+        // }
+        // show1();
+
+        // example-3
+        // let a=8;
+        // console.log(a);
+        // function display(a){
+        //     console.log(a);
+        //     return a
+        // }
+        // document.getElementById('demo').innerHTML=display(9);
+        //     console.log(display(10));
+          // example-4
+        //   "use strict"
+        //    a=7;
+        //   console.log(a);
+        // const outer=()=>{
+        //     let b=11;
+        //     console.log(b);
+        //     console.log('outer function');
+            // pass()
+            // return {};
+            // return undefined;
+
+        // }
+        // outer()
+        // console.log(outer);
+        // console.log(outer());
+
+
+        // example-5
+        // const outer=(()=>{
+        //     console.log('outer function');
+        // })();
+        // outer();
+
+        // (()=>{
+        //     console.log('outer function');
+        // })();
+        
+
+                // example-6
+            //   (function show(){
+            //         console.log('show function');
+            //     })()
+
+            //     show()
+
+
+             // example-7
+            //  var a=10;
+            //  function first(){
+            //     var b=11;
+            //     function second(){
+            //         var c=12;
+            //         console.log(a,b,c);
+            //     }
+            //     second()
+            //  }
+            //  first()
+         // example-8
+        //  const outer=(a)=>{
+        //     let b=10;
+        //     const innerFunction=()=>{
+        //         let sum=a+b;
+        //         console.log('the sum is ',sum);
+        //     }
+        //     innerFunction();
+        //  }
+        //  outer(8);
+
+        //exampl-9
+        // const outer=(a)=>{
+        //     let b=10;
+        //     console.log(a);
+        //     const innerFunction=()=>{
+        //         let sum=a+b;
+        //         console.log('the sum is ',sum);
+        //         // return 88
+        //     }
+        //     return innerFunction()
+        //  }
+        //  outer(8);
+        //  console.log(outer(7));
+
+
+        // //exampl-10
+        // const outer=(a)=>{
+        //     console.log('outer function');
+        //     const inner=(b)=>{
+        //         // let b=10;
+        //         console.log(a,b);
+        //     }
+        //  return inner
+        // }
+        // outer(88)(12)
+
+        
+        //exampl-11
+        const outer=(a)=>{
+            console.log('outer function');
+        }
+        // outer();
+        // console.log(outer);
+        // a=outer();
+        // console.log(a);
+
+        a=outer
+        a()
+        // console.log(a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Short Cuts</h1>
+    <script>
+        // document.addEventListener('keyup',(e)=>{
+        //     if(e.key=='u' || e.key=='U'){
+        //         alert('hi guys')
+        //         console.log(e.key);
+        //     }
+        //     else
+        //     if(e.key=='m' && e.ctrlKey){
+        //         alert('hi guys pressed ctrl key')
+        //         console.log(e.key);
+        //     }
+        //     else
+        //     if(e.key=='q' && e.ctrlKey){
+        //         alert('see you')
+        //         console.log(e.key);
+        //     }
+        //     else
+        //     if(e.key=='s' && e.ctrlKey){
+        //         alert('copy you')
+        //         console.log(e.key);
+        //     }
+        // })
+
+        document.addEventListener('keydown',(e)=>{
+            if(e.key=='u' || e.key=='U'){
+                alert('hi guys')
+                console.log(e.key);
+            }
+            else
+            if(e.key=='m' && e.ctrlKey){
+                alert('hi guys pressed ctrl key')
+                console.log(e.key);
+            }
+            else
+            if(e.key=='q' && e.ctrlKey){
+                alert('see you')
+                console.log(e.key);
+            }
+            else
+            if(e.key=='s' && e.ctrlKey){
+                alert('copy you')
+                console.log(e.key);
+            }
+        })
+    </script>
+</body>
+</html>

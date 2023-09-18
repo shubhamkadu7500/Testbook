@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="form">
+        <h1>keyBoard Event</h1>
+        <p>onKeyDown</p>
+        <input type="text" id="down">
+        <p>onKeyUp</p>
+        <input type="text" id="up">
+        <p>onKeyPress</p>
+        <input type="text" id="press">
+    </div>
+    <script>
+         let keyevent1=document.getElementById('down');
+        keyevent1.addEventListener('keydown',function (e){
+            console.log(e.keyCode,e.key);
+        })
+
+        let keyevent2=document.getElementById('up');
+        keyevent2.addEventListener('keyup',function (e){
+            console.log(e.keyCode,e.key);
+        })
+
+        let keyevent3=document.getElementById('press');
+        keyevent3.addEventListener('keypress',function (e){
+            console.log(e.keyCode,e.key);
+        })
+    </script>
+</body>
+</html>

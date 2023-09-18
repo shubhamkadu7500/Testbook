@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container{
+            display: flex;
+            margin: 10px;
+            padding: 10px;
+        }
+        .timebox{
+            border: 10px solid burlywood;
+       
+            width: 180px;
+            height: 180px;
+            display: inline-block;
+            margin: 50px;
+            padding: 30px;
+            border-image: linear-gradient(red,yellow,maroon) 30 /25px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="timebox">
+            <h1>India</h1>
+            <p id="indiatime"></p>
+        </div>
+
+        <div class="timebox">
+            <h1>Paris</h1>
+            <p id="Paris"></p>
+        </div>
+
+        <div class="timebox">
+            <h1>New York</h1>
+            <p id="New_York"></p>
+        </div>
+
+        <div class="timebox">
+            <h1>London</h1>
+            <p id="London"></p>
+        </div>
+    </div>
+    <script>
+        document.write()
+var indiantime=function(){
+    document.getElementById("indiatime").innerHTML=new Date().toLocaleString("en-US",{timeZone:'Asia/kolkata',timeStyle:'long',hourCycle:'h12'})
+}
+indiantime()
+setInterval(indiantime,1000)
+
+
+var Paris=function(){
+    document.getElementById("Paris").innerHTML=new Date().toLocaleString("en-US",{timeZone:'Europe/Paris',timeStyle:'long',hourCycle:'h12'})
+}
+Paris()
+setInterval(Paris,1000)
+
+
+var New_York=function(){
+    document.getElementById("New_York").innerHTML=new Date().toLocaleString("en-US",{timeZone:'America/New_York',timeStyle:'long',hourCycle:'h12'})
+}
+New_York()
+setInterval(New_York,1000)
+
+
+var London=function(){
+    document.getElementById("London").innerHTML=new Date().toLocaleString("en-US",{timeZone:'Europe/London',timeStyle:'long',hourCycle:'h12'})
+}
+London()
+setInterval(London,1000)
+    </script>
+</body>
+</html>

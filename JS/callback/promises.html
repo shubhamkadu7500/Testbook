@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+        // var mypromise=new Promise(function(resolve,reject){
+        //     const number1=2;
+        //     const number2=2;
+        //     if(number1===number2){
+        //         // opertaion successfull
+        //         resolve();
+        //         console.log('resolved');
+        //     }
+        //     else{
+        //         reject();
+        //         console.log('rejected');
+        //     }
+        // })
+
+        // mypromise.then(function(){
+        //     console.log('numbers are equal');
+        // })
+        // .catch(function(){
+        //     console.log('error');
+        // })
+
+            var promise=new Promise(function(resolve,reject){
+                    resolve(5)
+            })
+
+
+promise.then(subtraction).then(multiplication).then(addition).then(divison).then(function(data){
+                console.log('the resilt is ',data);
+            })
+.catch((e)=>console.log(e))
+
+ async function show(){
+    try{
+        let a=await addition(10);
+    console.log(e);
+ 
+    let b=await subtraction(a);
+    console.log(b);
+    let c=await multiplication(b);
+    console.log(c);
+    // let d=await divison();
+    return await divison(c);
+    }
+    catch(e){
+        console.log(e.message);
+    }
+   
+}
+show().then(data=>console.log(data))
+// show().then(a).then(b).then(c).then(d).then(function(data){
+//                 console.log('the resilt is ',data);
+//             })
+
+// show()
+// console.log('the data is',show());
+
+        function addition(val){
+            return val+5;
+        }
+        function subtraction(val){
+            return val-3;
+        }
+        function multiplication(val){
+            return val*5;
+        }
+        function divison(val){
+            return val/7;
+        }
+</script>
+
+</body>
+</html>

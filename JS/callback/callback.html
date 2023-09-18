@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Callbacks in Js</h1>
+    <script>
+        // example-1 multiple cases
+        // case-1
+        // const funcA=()=>{
+        //     console.log('Function A');
+        // }
+        // const funcB=()=>{
+        //     console.log('Function B');
+        // }
+        // funcA();
+        // funcB();
+
+
+
+        // case-2
+        // const funcA=()=>{
+        //     setTimeout(() => {
+        //         console.log('Hello from function A');
+        //     }, 3000);
+        // }
+
+        // const funcB=()=>{
+        //     console.log('Function B');
+        // }
+        // funcA();
+        // funcB();
+
+
+        // case-3
+        // function frinedcall1(friend){
+        //     setTimeout(() => {
+        //         console.log('i will call you after 3 sec');
+        //     }, 3000);
+        // }
+        // function frinedcall2(){
+        //     console.log('See i have called you after 3 sec');
+        // }
+        // frinedcall1('Peter');
+        // frinedcall2();
+
+
+        // case-4
+        // function frinedcall1(friend,callback){
+        //     setTimeout(() => {
+        //         console.log('i will call you after 3 sec');
+        //         callback()
+        //     }, 3000);
+        // }
+        // function frinedcall2(){
+        //     console.log('See i have called you after 3 sec');
+        // }
+        // frinedcall1('Peter',frinedcall2);
+
+
+        // case-5
+        // function frinedcall1(friend,frinedcall2 = () => {
+        //     console.log('See i have called you after 3 sec');
+
+        // }) {
+        //     setTimeout(() => {
+        //         console.log('i will call you after 3 sec');
+        //         frinedcall2()
+        //     }, 3000);
+        // }
+
+        // frinedcall1('Peter');
+
+
+    </script>
+</body>
+
+</html>

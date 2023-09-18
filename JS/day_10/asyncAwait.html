@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Async Await in JS</h1>
+    <p id="demo"></p>
+<script>
+//     function show(){
+//         return 10;
+//     }
+//    document.getElementById('demo').innerHTML=show()
+//     const showdata=async ()=>{
+//         let marks=await 100;
+//         // console.log(marks);
+//         return marks
+//     }
+//     // showdata()
+//     showdata().then(data=>console.log(data))
+
+
+
+const displayData=async ()=>{
+    let name=await 'Peter';
+    console.log(name);
+    return name;
+}
+
+console.log('Hello1');
+displayData();
+// displayData().then(data=>console.log(data))
+
+console.log('hello2');
+</script>
+
+
+
+</body>
+</html>

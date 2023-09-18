@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CallBack example 3</h1>
+    <script>
+        addition(5,function(addres,err){
+            if(!err){
+                subtraction(addres,function(subres,err){
+                    if(!err){
+                        multiplication(subres,function(mulres,err){
+                            if(!err){
+                                division(mulres,function(divres,err){
+                                    console.log('the result is ',divres);
+
+                                })
+                            }
+                        })
+                    }
+                })
+            }
+            else{
+                console.log('value was false');
+            }
+        })
+        function addition(val,callback){
+            return callback(val+5,false)
+        }
+        function subtraction(val,callback){
+            return callback(val-3,false)
+        }
+        function multiplication(val,callback){
+            return callback(val*5,false)
+        }
+        function division(val,callback){
+            return callback(val/7,false)
+        }
+       
+    </script>
+</body>
+</html>

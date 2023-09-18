@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array in JS</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <script>
+        // const fruits=['Apple','Mango','Banana']
+        // document.getElementById('demo').innerHTML=fruits.length;
+        // document.getElementById('demo1').innerHTML=fruits.toString().length;
+
+        // fruits[8]='Pineapple'
+        // document.getElementById('demo1').innerHTML=fruits.length;
+        // const veggeis=new Array('Potato','Onion','Carrot')
+        // document.getElementById('demo2').innerHTML=veggeis;
+
+        // pop push add ya delete data from last
+    //  const fruits=['Apple','Mango','Banana','Orange','PineApple','Guava']
+    //  let morefruits=fruits.push('Kiwi')
+    // document.getElementById('demo').innerHTML=fruits;
+    // let popfruits=fruits.pop();
+    // document.getElementById('demo').innerHTML=fruits.length;
+
+// shift unshift add or delete from first
+// const fruits=['Apple','Mango','Banana','Orange','PineApple','Guava']
+// document.getElementById('demo').innerHTML=fruits;
+
+// fruits.unshift('watermelon');
+// fruits.shift()
+// document.getElementById('demo1').innerHTML=fruits;
+
+
+// delete array
+// const fruits=['Apple','Mango','Banana','Orange','PineApple','Guava']
+// document.getElementById('demo').innerHTML=fruits.length;
+
+// delete fruits[3];
+// document.getElementById('demo1').innerHTML=fruits.length;
+
+
+// splice slice 
+// const fruits=['Apple','Mango','Banana','Orange','PineApple','Guava']
+// fruits.splice(2,2,'melon')
+// document.getElementById('demo').innerHTML=fruits.length;
+
+// fruits.splice(1)
+// document.getElementById('demo').innerHTML=fruits;
+
+
+// const fruits=['Apple','Mango','Banana','Orange','PineApple','Guava']
+// const otherfruits=fruits.slice(1)
+// console.log(otherfruits);
+// document.getElementById('demo').innerHTML=otherfruits;
+
+
+const summerFruits=['Apple','Mango','Banana','cantaloupes','Plum','Litchi']
+const winterFruits=['Guava','Grapes','Orange','Dates','Sapodilla']
+const veggeis=['Onion','Carrot','Raddish']
+const fruits=winterFruits.concat(summerFruits,veggeis)
+document.getElementById('demo').innerHTML=fruits.sort().reverse()
+// document.getElementById('demo').innerHTML=fruits.reverse();
+
+
+    </script>
+</body>
+</html>

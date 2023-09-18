@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Date in JS</h1>
+    <p id="demo"></p>
+    <h1>India Time</h1>
+    <p id="IndiaTime"></p>
+    <script>
+        var d=new Date();
+        document.getElementById('demo').innerHTML=d;
+        var indianTime1=function(){
+            document.getElementById('IndiaTime').innerHTML=new Date().toLocaleString("en-US",{timeZone:'Asia/Kolkata',timeStyle:'short',hourCycle:'h12'})
+        }
+        indianTime1()
+        setInterval(indianTime1,1000)
+        // setTimeout(indianTime1,1000)
+    </script>
+</body>
+</html>

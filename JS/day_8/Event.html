@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- onclick
+    mouseover
+mouseout
+addeventlistener focus submit action -->
+
+<div class="container">
+    <h1>This is Events in JS</h1>
+    <p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur cupiditate consequatur nisi aut natus labore unde iste fugit? Facilis asperiores dolores, voluptatem animi assumenda iusto excepturi impedit esse molestias fuga.</p>
+</div>
+<!-- <button id="btn" onclick="toogleBtn()">Show/Hide</button> -->
+<p id="demo"></p>
+<button onclick="displayTime()">Show Time</button>
+<script>
+    // function toogleBtn(){
+    //     let btn=document.getElementById('btn');
+    //     let para=document.getElementById('para');
+    // if(para.style.display!='none'){
+    //     para.style.display='none'
+    // }
+    // else{
+    //     para.style.display='block'
+
+    // }
+    // }
+
+    function displayTime(){
+        document.getElementById('demo').innerHTML=Date();
+    }
+</script>
+
+</body>
+</html>
