@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <H2>User Registration Form</H2>
+    <hr>
+    <br>
+    <form action="">
+        <label for="name">Enter Your Name : </label>
+        <input type="text" placeholder="full name" required>
+        <br><br>
+        <label for="email">Enter Your Email : </label>
+        <input type="email" placeholder="abc@email.com" required>
+        <br><br>
+        <label for="phone">Enter Your Monile Number : </label>
+        <input type="number">
+        <br><br>
+        <label for="gender">Select Your Gender : </label>
+        <input type="radio" name="gender">Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Other
+        <br><br>
+        <label for="education">Select Your Qualification : </label>
+        <input type="checkbox">10th
+        <input type="checkbox">12th
+        <input type="checkbox">Graduation
+        <input type="checkbox">Post-Graduation
+        <br><br>
+        <label for="city">Select Your City :</label>
+        <select name="city" id="">
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="pune">Pune</option>
+            <option value="nashik">Nashik</option>
+        </select>
+        <br><br>
+        <label for="bdate">Select Date Of Birth :</label>
+        <input type="date" min="2000-08-07" max="2023-08-07">
+        <!-- min is restrict the date less than that nad similary max is also used to restrict selection of max date-->
+        <br><br>
+        <label for="">Write Comment About Yourself :</label><br>
+        <textarea name="comment" id="" cols="30" rows="3" placeholder="Comment" ></textarea>
+        <br><br>
+        <label for="">Choose A Username :</label>
+        <input type="text">
+        <br><br>
+        <label for="">Enter Any Password :</label>
+        <input type="password">
+        <br><br>
+        <input type="button" value="Click Here To Registor">
+    </form>
+    
+</body>
+</html>

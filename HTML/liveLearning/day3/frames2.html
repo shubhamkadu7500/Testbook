@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>frames2</title>
+</head>
+<frameset rows="50%, *, *"> 
+    <!-- star * means remaning space -->
+    <frameset cols="100%">
+        <frame name="frame1" src="https://www.wikipedia.org/" target="_parent">
+    </frameset>
+
+    <frameset cols="*, *, *">
+        <frame name="frame2" src="https://www.wikipedia.org/" target="frame1">
+        <frame name="demo2" src="demo2.html">
+        <frame name="last" src="https://www.bing.com/">
+    </frameset>
+
+    <frameset>
+        <frame name="frame" src="Frames.html">
+        
+    </frameset>
+</frameset>
+</html>

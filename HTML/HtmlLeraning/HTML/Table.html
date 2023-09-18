@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+</head>
+<body>
+    <h2>Creating Table Using Table Tag</h2>
+    <table border="3">
+        <caption>Employee Information</caption>
+        <tr>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>City</th>
+        </tr>
+        <tr>
+            <td>Shubham</td>
+            <td>50000</td>
+            <td>Nashik</td>
+        </tr>
+        <tr>
+            <td>Manoj</td>
+            <td>40000</td>
+            <td>Loni</td>
+        </tr>
+        <tr>
+            <td>Shubham</td>
+            <td>50000</td>
+            <td>Nashik</td>
+        </tr>
+        <tr>
+            <td>Manoj</td>
+            <td>40000</td>
+            <td>Loni</td>
+        </tr>
+        <tr></tr>
+    </table>
+    <!-- using table tag we create table and using tr tag we create rows in this table and using td tag we add data to rows of table   -->
+    <!-- using th tag we can give header of table and using caption tag we can give ti name or caption to given table -->
+    <!-- defoault table do not have boarder using style attribute we can give boader to table-->
+
+    
+    <h2>New Table</h2>
+    <p>Using colspan creating table</p>
+    <table border="2">
+        <caption>MOnthwise saving</caption>
+        <tr>
+            <th>Month</th>
+            <th>Savig</th>
+        </tr>
+        <tr>
+            <td>Jan</td>
+            <td>4000</td>
+        </tr>
+        <tr>
+            <td>Feb</td>
+            <td>5000</td>
+        </tr>
+        <tr>
+            <td colspan="2">Total Saving :-9000</td>
+        </tr>
+    </table>
+    <br>
+
+
+    <p>Using rowspan creating table</p>
+    <table border="2">
+        <tr>
+            <th>Nmae</th>
+            <td>Shubham</td>
+           
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>1234567890</td>
+        </tr>
+        <tr>
+            <td>0987654321</td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td>Loni</td>
+        </tr>
+    </table>
+</body>
+</html>
