@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script type="text/javascript">
+        let student1 = { name:"shubham",
+                        class:"15std",
+                        status:"pass",
+                        totalmark:88,
+                        20:100,
+                        display1: function(){
+                            console.log(this.name);
+                        }
+                    };
+// this is another way to creating objects
+        function Studentstructure(name, sclass, status, totalmarks){
+            this.name = name;
+            this.class = sclass;
+            this.status = status;
+            this.totalmarks = totalmarks;
+            // this.display = function(){
+            //     console.log(this.name);
+            // }
+        }
+
+        let student2 = new Studentstructure("shubham", 10, "pass", 80);
+        console.log(student1);
+        console.log(student2);
+        // console.log(student2.display);
+
+    </script>
+</body>
+</html>

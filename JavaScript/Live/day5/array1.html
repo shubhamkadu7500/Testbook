@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods in javascript array</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <p id="demo14"></p>
+    <script type="text/Javascript">
+        const veggies = new Array('potato','onion','carrote');
+        document.getElementById('demo').innerHTML= veggies.length;
+        // no of element in arrray
+        document.getElementById('demo1').innerHTML= veggies.toString().length;
+        // no of caractors in arrray
+
+        // Methods
+        // push and pop
+        const fruits = ["banana", "apple", "chiku", "pineapple"];
+        document.getElementById('demo2').innerHTML= fruits;
+        let morefruits =fruits.push('kiwi');
+        // adding element at last
+        document.getElementById('demo3').innerHTML= fruits;
+        let popfruits = fruits.pop();
+        // delete element at last
+        document.getElementById('demo4').innerHTML= fruits;
+
+        fruits.unshift('watermelon');
+        // add at frist place
+        document.getElementById('demo5').innerHTML=fruits;
+        fruits.shift();
+        // delete at first place
+        document.getElementById('demo6').innerHTML=fruits;
+
+
+        delete fruits[3];
+        // it delete element by not address
+        document.getElementById('demo7').innerHTML=fruits;
+        document.getElementById('demo8').innerHTML=fruits.length;
+
+        // splice slice
+        // splice
+        const cars = ['tata', 'nexon', 'suv400','xuv300'];
+        document.getElementById('demo11').innerHTML=cars;
+        cars.splice(2,0,'tiago');
+        document.getElementById('demo12').innerHTML=cars;
+        // cars.splice(2,4);
+        // document.getElementById('demo13').innerHTML=cars;
+        // slice
+        cars.slice(1,3);
+        document.getElementById('demo14').innerHTML=cars;
+
+
+
+
+    </script>
+</body>
+</html>

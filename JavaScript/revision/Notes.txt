@@ -1,0 +1,98 @@
+Javascript
+*************************************************************
+What is JavaScript?
+ans - a powerful, flexible, and fast programming language.
+    powers the dynamic behavior on websites,  remains at the core of web development.
+    used mainly for enhancing the interaction of a user with the webpage.
+    web pages can be made live and interactive.
+
+by using getElementById()  Methods we can accessed that element and we can
+change it and designe by that is must  be unique in nature
+
+eg : <p id="p11"></p>
+    document.getElementById('p11').innerHTML = "Deeraj Kadu";
+    document.getElementById('p11').style.color = 'red';
+
+
+*************************************************************8
+
+
+Javascript Variable : 
+variavle can store the value and its type is var, let and const, javascript is untype language.
+type of variable : 
+globle - it can define anywhere in js file
+var fruit ="mango";
+document.getElementById('f1').innerHTML = fruit;
+
+local - it can define only in function 
+function hello(){
+    var gretting = "welcome"
+    console.log(gretting);
+    var gretting = "shubham";
+    console.log(gretting);
+}
+// var gretting = "shubham"; here we cannot redefine it
+hello();
+
+****Litrals : - 
+here we can used `${}` for formating string
+ex : document.getElementById('litral').innerHTML = `the given fruirt is ${fruit}`;
+
+
+*************************************************************
+
+
+ operators : 
+is a symbol reserved for performing a special task, can be variables,
+string or numeric literals.
+types of operators : 
+● Arithmetic Operators
+● Relational Operators
+● Bitwise Operators
+● Logical Operators
+● Assignment Operators
+● Ternary Operators
+● TypeOf Operator
+
+********************************************************
+
+ 
+Comment Statement : 
+easy understanding of the code, used to disable a part of code from being executed.
+comments will be ignored by the JavaScript engine
+type of comment : 
+single line and double line 
+// this is sinle line comment 
+or 
+/* this is double line comment */
+
+
+************************************************************
+
+JavaScript Identifiers : 
+names given to variables, functions, parameters, classes, etc. are called Identifiers.
+○ Names can begin with a letter (a to z or A to Z).
+○ Names can also begin with (_) or ($).
+○ Variable names should not start with digits(0-9).
+○ Variable names are case-sensitive (a and A are different variables).
+○ Variable names can have letters, digits(0-9), underscore(_) or dollar($).
+○ JavaScript keywords cannot be used as variable names.
+
+ex : var _fruit = apple;
+
+**************************************************************
+
+JavaScript Data Types: 
+dynamic type language because the JS engine chooses the data type itself dynamically.
+variables can hold different data types.
+type of data type : 
+Primitive Data Type - string, number, boolean, null  and undefine
+Non - Primitive Data Type - object, array and RegExp 
+
+**************************************************************
+
+variable's in javascript:
+variable is data storing containers, values may variy and having unique name of variable
+types var, let, const are used to create variable
+javascript is untyped language
+let - you can not re declare this it gives error (it is block level variable)

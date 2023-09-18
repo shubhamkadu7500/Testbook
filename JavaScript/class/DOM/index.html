@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM in JS</title>
+</head>
+<body>
+    <div id="inner" name="t1"></div>
+    <div id="first" name="t1"></div>
+    <div id="inner" class="t1"></div>
+    <div id="first" class="t1"></div>
+    <div id="inner" class="t2"></div>
+    <div id="first" class="t2"></div>
+    <script type="text/javascript">
+        // document.getElementById('inner').innerHTML='<b>Hello</b>';
+        // document.write('hello world');
+        // getting by name
+        let element = document.getElementsByName('t1');
+        console.log(element);
+        // getting by classname
+        let element1 = document.getElementsByClassName('t1');
+        console.log(element1);
+        // getting by tagname
+        let element2 = document.getElementsByTagName('div');
+        console.log(element2);
+        // querySelectorAll        let element3 = document.querySelectorAll('div.t1');
+        console.log(element3);
+
+
+    </script>
+</body>
+</html>

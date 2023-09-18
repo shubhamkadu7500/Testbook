@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("Before the delay");
+        // synchronus
+        function delay(sec){
+            let start = Date.now();
+            let now  = Date.now();
+            while(now - start < (sec * 1000)){
+                now  = Date.now();
+            }
+        }
+        // delay(5);
+        // Asynchronus
+        setTimeout(function(){
+            console.log("Delayed");
+        }, 2000);
+
+        
+        console.log("After Delay");
+    </script>
+</body>
+</html>

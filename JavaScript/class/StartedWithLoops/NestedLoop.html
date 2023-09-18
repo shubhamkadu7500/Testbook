@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Loop</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // case 1:
+        // for(var i = 0; i < 10; i++){
+        //     for(var j = 0; j< 5; j++){
+        //         console.log("i = " + i + " j = " + j);
+        //     }
+        //     console.log("this is inside i");
+        // }
+
+
+        // case 2: i = row and j = columan
+        // for(var i = 1; i <= 5; i++){
+        //     var line = "";
+        //     for(var j = 1; j <= i; j++ ){
+        //         // console.log(j);
+        //         line +=j;
+        //     }
+        //     console.log(line);
+        // }
+
+
+        // case 3:
+        for( var i = 1; i <= 10; i++){
+            console.log("table of " + i);
+            for(var j = 1; j <= 10; j++){
+                var line = i + "x" + j + "=" +(i*j);
+                console.log(line)
+            }
+            console.log(" ");
+            console.log(); 
+        }
+    </script>
+</body>
+</html>

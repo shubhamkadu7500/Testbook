@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method or Function</title>
+</head>
+<body>
+    <!-- foure main method -->
+    <!-- push, pop this two add and remove element at end of array -->
+    <!-- shift removes from first of array and unshift add begining of array -->
+    <script type="text/javascript">
+        var student = ["shubham", "manoj", "kishor"];
+        console.log(student);
+
+        var employees = new Array();
+        employees[0]= "shubham";
+        employees[1]="manoj";
+        employees[2]="deepak";
+        console.log(employees);
+
+        var subject = new Array("math", "english", "marathi", "c++");
+        console.log(subject);
+
+        // concat to array
+        console.log(student.concat(employees));
+        // sort array
+        console.log(student.sort());
+
+        // isArray
+        console.log(Array.isArray(employees));
+
+        // indexof
+        console.log(student.indexof("shubham"));
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>syntax</title>
+</head>
+<body>
+    <h1>Hello</h1>
+    <script type="text/javascript">
+
+        // example : 1 define global and local variable
+        var data = 200;
+        function a(){
+            var data = 100;
+            document.write("Inside variable :"+ data);
+        }
+        document.write("outside variable :", data);
+        document.write(`<br>`);
+        a();
+
+        // example : 2
+        // list element of fruits with litrals an dwithout litrals
+        console.log("The List Of Fruits: \nMango \nBanana \nAppple.");//without litrals
+        // document.write("<br>");
+        console.log(`The List Of Fruits :
+        Mango
+        Banana
+        Apple.`);//with litrals
+
+        // example 3:
+        // calculate silple intrest and console it
+        var v1 = 1000;
+        var v2 = 1;
+        var v3 = 7;
+        var simple_intrest = v1 * v2 * v3;
+        console.log(`the simple intrest is : ${simple_intrest/100}`);
+
+        // example 4: 
+        // menu list console
+        console.log(`The Menu List :
+        Tea
+        Coffee
+        Milk
+        Sndwhich
+        Vada`);
+
+    </script>
+</body>
+</html>

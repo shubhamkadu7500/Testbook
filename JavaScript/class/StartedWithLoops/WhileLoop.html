@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While loop</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // case 1:
+        // var x = 0;
+        // while(x < 10){
+        //     console.log("x is : " + x);
+        //     x++;
+        // }
+
+
+        // case 2:
+        // var sum = 0;
+        // var input = 0;
+        // while(input!= "x"){
+        //     // this read string as a int
+        //     sum += parseInt(input); 
+        //     input = prompt("enter number to add x to exit ");
+            
+        // }
+        // console.log("total is " + sum);
+
+
+        // case 3: this loop execute first then check condition
+        // var x = 110;
+        // var x =0;
+        // do{
+        //     console.log("x is " + x);
+        //     x++;
+        // } 
+        // while(x < 10);
+
+
+        // case 4: this check condition first
+        // var x = 110;
+        // while(x  < 10){
+        //     console.log("x is " + x);
+        //     x++;
+        // }
+
+
+        var input = 0;
+        var sum =0;
+        do{
+            // sum += parseInt(input);
+            input = prompt("enter the number to add or x to exit: ");
+            
+        } 
+        while(input != "x");
+        console.log(sum);
+        </script>
+</body>
+</html>

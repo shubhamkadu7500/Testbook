@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event in javascript</title>
+</head>
+<body>
+    <!-- this is called event -->
+    <!-- <button onclick="document.getElementById('time').innerHTML=Date()">show time</button>
+    <p id="time"></p> -->
+    
+    <button type="button"
+        onclick="document.getElementById('demo').innerHTML = Date()">
+        Click me to display Date and Time.
+    </button>
+    <p id="demo"></p>
+
+    <!-- onmouseover event and onmouseout event-->
+    <div 
+        onmouseover="document.body.style.backgroundColor='blue'"
+        onmouseout="document.body.style.backgroundColor='white'"
+        id="changecolor">
+        Mouseover to change of page to blue color
+    </div>
+    <div id="changecolor2">
+        shubham jijabhau kadu
+    </div>
+    <p id="time1"></p>
+    
+    <script type="text/javascript">
+        var i = 0;
+        document.getElementById('changecolor2').onmouseover = function() {
+            i++;
+            document.getElementById('time1').innerHTML="mouse over is called with i: "+i;
+        }
+        document.getElementById('changecolor2').onmousemove = function() {
+            i++;
+            document.getElementById('time1').innerHTML="mouse move is called with i: "+i;
+        }
+        // onmousedown event 
+        document.getElementById('changecolor').onmousedown = function(){
+            alert('mouse down is occured');
+        } 
+
+        document.getElementById('changecolor').onmousedown = function(){
+            alert('mouse down is occured');
+        } 
+
+        // keyboard Event
+        
+        
+    </script>
+</body>
+</html>

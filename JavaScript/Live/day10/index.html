@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegExpres In Javascript</title>
+</head>
+<body>
+    <h1>RegExp in javascript</h1>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <script type="text/javascript">
+        // type 1
+        // let text = "Hello Students";
+        // let pattern = /Students/i;
+        // // i means conse sensitive
+        // let result =text.match(pattern);
+        // document.getElementById('demo').innerHTML=result;
+
+        // let text1 = "How is everyone and what is this";
+        // let pattern1=/is/i;
+        // let result1= test.match(pattern1);
+        // console.log(result1);
+
+        // document.getElementById('demo1').innerHTML=result1;
+
+        // type2
+        // let text = "How is everyone and what is this";
+        // let pattern = /is/ig;
+        // // i means conse sensitive
+        // let result =text.match(pattern);
+        // document.getElementById('demo').innerHTML=result;
+
+        // type3
+        // let test = `Is this
+        // all there
+        // is is`;
+        // let pattern=/^is/mig;
+        // let result =test.match(pattern);
+        // document.getElementById('demo').innerHTML=result;
+
+        // type4 groups
+        // let test = `Is this but all tHere is?`;
+        // let pattern=/[h]/g;
+        // let pattern=/[is]/gi;
+        // let pattern=/[a-h]/gi;
+        // let pattern=/[A-H]/g;
+        // let pattern=/[A-Z]/g;
+        // let result =test.match(pattern);
+        // document.getElementById('demo').innerHTML=result;
+
+
+        // type5 0 - 9
+        // let test = `5472837484922`;
+        // let patteren= /[1-4]/g;
+        // // let patteren= /[^1-4]/g;
+        // let result= test.match(patteren);
+        // document.getElementById('demo').innerHTML=result;
+
+
+        // type6 [x|y]
+        // let test = `re, green, red, red, green, gr, blue, yellow`;
+        // let patteren= /(red|yello)/g;
+        
+        // let result= test.match(patteren);
+        // document.getElementById('demo').innerHTML=result;
+
+
+        // type7 match a-z, A-Z, 0-9   \w
+        // let test = "Given_100%";
+        // let patteren= /\W/g;
+        // w, D, d we can used
+        // let result= test.match(patteren);
+        // document.getElementById('demo').innerHTML=result;
+
+
+        // type quantifyers +,
+        // let text = "hello wor  ld! he llo colling ";
+        // let patteren = /o+/g;
+        // let result= text.match(patteren);
+        // document.getElementById('demo').innerHTML=result;
+
+        // quantifiyers *,
+        // let text = "Helloooo wor  ld! He hoe llo coollege! ";
+        // let patteren = /ho*/gi;
+        // let result= text.match(patteren);
+        // document.getElementById('demo').innerHTML=result;
+
+        // quantifiyers ?,
+        // let text = "1,100 or 1000? ";
+        // let patteren = /10?/g;
+        // let result= text.match(patteren);
+        // document.getElementById('demo').innerHTML=result;
+
+        // p{h}
+        // let str = "abcdepppp, ppppppp";
+        // let patteren = /p{4}/g;
+        // let result= str.match(patteren);
+        // document.getElementById('demo').innerHTML=result;
+
+
+        // {x,y}
+        // let text = "100,1000 or 100000?";
+        // let patteren = /\d{3,4}/g;
+        // let result= text.match(patteren);
+        // document.getElementById('demo').innerHTML=result;
+
+        // let text = "100,1000 or 100000?";
+        // let patteren = /\d{3,}/g;
+        // let result= text.match(patteren);
+        // document.getElementById('demo').innerHTML=result;
+
+        let text=`Is this
+        all there
+        is
+        is`;
+        let pattern=/^is/mig;
+        let result=text.match(pattern);
+        document.getElementById('demo').innerHTML=result;
+    </script>
+</body>
+</html>

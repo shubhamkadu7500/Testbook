@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gmail Using RegExp</title>
+</head>
+<body>
+    <h1>email validation</h1>
+    <p id="demo"></p>
+    
+        <div onsubmit="emailpatteren()">
+            <label for="">Email-Id</label>
+            <input type="text" name="" id="emailcheck"><br>
+            <p id="error_msg"></p><br>
+            <button id="tbn">Submit</button>
+        </div>
+    
+    <script type="text/javascript">
+
+        // example 1
+        // let test1 = "Shubhamkadu7500@gmail.com";
+        // // let test = "shubhamkadu7500";
+        // let patteren =/^[a-zA-Z0-9._%]+@gmail\.com$/; 
+        // let result= test1.match(patteren);
+        // document.getElementById('demo').innerHTML=result;
+
+        // example 2
+        let 
+
+        function emailpatteren(){
+            // e.preventDefault();
+            var emailcheck=document.getElementById('emailcheck').value;
+            // var patteren =/^[A-Z0-9]{3,}@[A-Z]{3,5}[.]{1}[A-z.]{2,6}$/;
+            var patteren =/^[a-zA-Z0-9._%]+@gmail\.com$/;
+            if(patteren.test(emailcheck)){
+                document.getElementById('error_msg').innerHTML='Valid Email ID';
+                console.log('valid');
+                return true;
+
+            }else{
+                document.getElementById('error_msg').innerHTML=' Not Valid Email ID';
+                console.log('Not Valid');
+                return false;
+            }
+        }
+    </script>
+</body>
+</html>

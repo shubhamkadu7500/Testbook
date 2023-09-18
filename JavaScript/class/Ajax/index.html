@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax in javascript</title>
+</head>
+<body>
+    <!-- retriving data from xml file -->
+    <script type="text/javascript">
+        function loadXMLDoc(){
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function(){
+                let xmlDoc = xhttp.responseXML;
+                let titles = xmlDoc.getElementsByTagName('TITLE');
+                for (let i = 0; i < titles.length;i++){
+                    let title = titles[i];
+                    console.log(title.nodeValue);
+                }
+                console.log(xmlDoc);
+            }
+            xhttp.open("GET","/cd_catlog.xml");
+            // xhttp.open("GET","/cd_catlog.xml");
+            xhttp.send();
+        }
+    </script>
+</body>
+</html>

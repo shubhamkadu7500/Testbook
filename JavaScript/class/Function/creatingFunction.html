@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>create function</title>
+    <p class="demo"></p>
+</head>
+<body>
+    <script type="text/javascript">
+        // case 1:
+        // function addition(a, b){
+        //     console.log(a+b);
+        // }
+        // addition(10, 20);
+        // addition(10, 30);
+        // addition('hello ', 'shubham');
+
+
+        // acse 2:
+        // function print10number(){
+        //     for(var i = 0; i < 10; i++){
+        //         console.log(i);
+        //     }
+        // }
+        // print10number();
+        // console.log("-----------first call-----------");
+        // print10number();
+        // console.log("-----------second call-----------");
+        // print10number();
+        // console.log("-----------third call-----------");
+
+        // case 3:
+        // function sayHello(f){
+        //     alert("Hello " + f);
+        // }
+        // document.getElementById("demo").innerHTML = sayHello("shubham");
+
+        // case 4: return number
+        // function add(a, b){
+        //     return a+b;
+        // }
+        // var total = add(10, 20);
+        // console.log(total);
+        // var total = add(10, 20);
+        // console.log(total);
+
+        function factorial(a){
+            if(a < 1){
+                // console.log("hello"); this get executed
+                return 1;
+                // console.log("hello"); this will not executed after return statement
+            }
+            var fact = 1;
+            for(var i = 0; i <= a ; i++){
+                fact += 1;
+            }
+            return fact;
+        }
+        var total = factorial(0);
+        console.log(total);
+    </script>
+</body>
+</html>

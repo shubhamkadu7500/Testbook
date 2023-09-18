@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <div id="demo"></div>
+    <script type="text/javascript">
+        function shubham(){
+            document.write("hello shubham");
+            document.getElementById('demo').innerHTML= 'We are Studying about Function Today' ;
+            var elementTo = document.getElementById('demo');
+            elementTo.style.color='red';
+            elementTo.style.font= '30px';
+
+        }
+
+        shubham();
+
+// 3) code lab3 que reverse to string 
+        function reverseString(str) {
+            // Split the string into an array of characters
+            var chars = str.split('');
+
+            // Reverse the array of characters
+            var reversedChars = chars.reverse();
+
+            // Join the reversed characters into a string
+            var reversedStr = reversedChars.join('');
+
+            // Return the reversed string
+            return reversedStr;
+            }
+
+            // Example usage
+
+            var inputString = "Hello, World!";
+            var inputString= prompt('Enter A Satring Here : ');
+            var reversedString = reverseString(inputString);
+            console.log(reversedString);
+
+            //write code for prime number
+
+            // que 2) write a javascript program that computes the average marks of the five student
+            // (you can tajes any number of these student )
+            // then this average is used to determine the corresponding gride
+
+            //  que 1) write a javascript conditional statement to sort these numbers display an alert box to show the result
+            var number = [4,3,7,5,3,8,5];
+            number.sort();
+
+            if (number.length > 0){
+                var sortedNumber = number.join(',');
+                alert("sorted number are :"+ sortedNumber);
+            }else {
+                alert("no number to be sorted");
+            }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        
+        function main(next) {
+            console.log('main is called');
+            next();
+        }
+
+
+        function next1(){
+            console.log('next1 is called');
+        }
+
+        function next2(){
+            console.log('nex2t is called');
+        }
+
+        main(next1);
+        main(next2);
+
+    </script>
+</body>
+</html>

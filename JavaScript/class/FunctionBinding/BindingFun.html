@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Binding</title>
+</head>
+<body>
+    <!-- bind() this mean binding function, binding method from one object to another object -->
+    <script type="text/javascript">
+        // case 1:
+        // let animal = {
+        //     name: 'lion',
+        //     color: 'yellow',
+        //     type: "Non-Pet"
+        // }
+        // console.log(animal.color);
+
+        // let bird = {
+        //     name :"parrot",
+        //     color: "green" 
+        // }
+
+        // function print(){
+        //     console.log(this.name +" "+ this.color);
+        // }
+        // let print_animal =  print.bind(animal);
+        // let print_bird = print.bind(bird);
+        
+        // print_animal();
+        // print_bird();
+
+        // case 2:
+        let animal = {
+            name: 'lion',
+            color: 'yellow',
+            type: "Non-Pet",
+            print:function() {
+                console.log(this.name +" "+ this.color);
+            }
+        }
+        
+        let bird = {
+            name :"parrot",
+            color: "green" 
+        }
+
+        let print_bird = animal.print.bind(bird);
+        animal.print();
+        print_bird();
+    </script>
+</body>
+</html>

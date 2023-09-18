@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocalVariable</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // inside a function whate ever you said variable it only used in inside
+        // console.log("this is before carDef " + carName);
+        function carDef(){
+            let carName = "Tata";
+            console.log("this is inside carDef " + carName);
+        }
+        // console.log("this is after carDef " + carName);
+        carDef();
+        // console.log("this is inside carDef " + carName);
+    </script>
+</body>
+</html>

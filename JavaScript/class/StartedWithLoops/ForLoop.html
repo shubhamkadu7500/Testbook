@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+    
+</head>
+<body>
+    <div class="mystyle" style="padding: 10px;">
+        <span id="third" style="border: 1px solid #000;"></span>
+        <br><br>
+        <span id="third" style="border: 1px solid #000;"></span>
+    </div>
+    <script type="text/javascript">
+        // case 1:
+        var num = 20;
+        // var i = 0; we can initialize i here also it depend on you
+        for(var i = 0; i <= num; i++ ){
+            console.log(i);
+        }
+        // case 2:
+        var num1 = 10;
+        for(var j = 0; j <= num1; ++j){
+            console.log(j);
+        }
+        // case 3:
+        var num3 = 10;
+        for(a = 0, b = 10; a <= num3; ++a, b--){
+            console.log(a , b);
+        }
+        // case 4:
+        var marks = {studentName:'shubham', subject: 'marathi', marks: 20};
+        for(keys in marks){
+            console.log(keys, marks[keys]);
+        }
+    </script>
+</body>
+</html>

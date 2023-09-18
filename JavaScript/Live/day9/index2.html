@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hover">Hover over me</p>
+    <p class="demo"></p>
+    <button id="btn" onclick="">Click me</button>
+    <script type="text/javascript">
+        const a= document.getElementById('hover');
+        const btn = document.getElementById('btn');
+
+        btn.addEventListener('click',clickfunctionData);
+        function clickfunctionData(){
+            document.getElementById('demo').innerHTML= 'cliked on me';
+        }
+    </script>
+</body>
+</html>
