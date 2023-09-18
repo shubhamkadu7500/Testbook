@@ -1,0 +1,15 @@
+iterative algo
+Array
+2D Array
+Strings(palondrom, asci)
+Recursion(return is important )
+Trees - binary tree, dfs, bsf
+LinkedList - using oop
+Stack 
+Queues
+
+
+advance programing
+dynamic programing
+heap
+graph
