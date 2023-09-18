@@ -1,0 +1,17 @@
+*{
+    background-color: rgb(158, 214, 214);
+}
+.heading{
+    border: 2px solid #fff;
+    text-align: center;
+    background-color: firebrick;
+
+}
+
+.discription {
+    height: 300px;
+    width: 700px;
+    border: 5px solid #fff;
+    border-radius: 50px;
+    text-align: center;
+}

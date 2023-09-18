@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+    <style>
+        body{
+            margin: 0;
+
+        }
+
+        #gird{
+            height: 100px;
+            display: grid;
+            grid-template-columns: 1fr, 1fr, 1fr;
+            background-color: crimson;
+            grid-gap: 3px;
+            transition: 500ms;
+        }
+
+        :where(.left, .center, .right){
+            background-color: navajowhite;
+            transform: 300ms;
+        }
+
+        :where(.left, .center, .right):hower{
+            background-color: crimson;
+        }
+
+        #grid:has(.left:hover){
+            grid-template-columns: 2fr, 0.5fr,0.5fr;
+        }
+        #grid:has(.center:hover){
+            grid-template-columns: 0.5fr, 2fr,0.5fr;
+        }
+        #grid:has(.right:hover){
+            grid-template-columns: 0.5fr, 0.5fr,2fr;
+        }
+    </style>
+</head>
+<body>
+    <div id="grid">
+        <div class="left"></div>
+        <div class="center"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

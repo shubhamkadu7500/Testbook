@@ -1,0 +1,38 @@
+h2{
+    color: blue;
+}
+
+p{
+    color: orange;
+    /* border-style: none; */
+    border-style: solid;
+}
+
+button{
+    color: orange;
+    border-style: solid;
+    border-width:thin ;
+    border-color: blue;
+    background-color: aqua;
+    border-top-right-radius:10px ;
+    border-bottom-left-radius: 10px;
+
+}
+button:hover{
+    color: aqua;
+    background-color: orange;
+}
+
+input{
+    color: aqua;
+    background-color: brown;
+    border-width:thin ;
+    border-radius: 5px;
+    height: 50px;
+}
+
+input:hover{
+    color: brown;
+    background-color: aqua;
+    
+}

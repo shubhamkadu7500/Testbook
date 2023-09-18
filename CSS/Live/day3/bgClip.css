@@ -1,0 +1,12 @@
+.containerclip{
+    width: 640px;
+    height: 400px;
+    margin: 50px auto;
+    background-color: #ff0;
+    color: red;
+    border: 40px dotted red;
+    padding: 40px;
+    /* background-clip: padding-box; */
+    background-clip:content-box;
+
+}

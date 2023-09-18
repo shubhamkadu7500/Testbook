@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            /* give the animation name step1 */
+            animation-name: animationdemo;
+            animation-duration: 6s;
+            /* animation-iteration-count: infinite; */
+            animation-iteration-count: 3;
+            /* animation-direction: reverse; */
+            /* animation-direction: alternate; */
+            animation-direction: alternate-reverse;
+
+
+        }
+
+        @keyframes animationdemo{
+            /* 1st type to apply animation */
+            /* from{background-color: red;}
+            to{background-color: blue;} */
+
+            /* 2nd type to apply animation */
+            /* 0%{background-color: red;}
+            25%{background-color: blue;}
+            50%{background-color: pink;}
+            75%{background-color: green;}
+            100%{background-color: red;} */
+
+            0%{background-color: red; left: 0px; top: 0px;}
+            25%{background-color: blue; left: 200px; top: 0px;}
+            50%{background-color: pink; left: 200px; top: 200px;}
+            75%{background-color: green; left: 0px; top: 200px;}
+            100%{background-color: red; left: 0px; top: 0px;}
+        }
+    </style>
+</head>
+<body>
+    <h1>Animation In CSS</h1>
+    <div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+*{
+    background-color: #ccc;
+
+}
+
+.heading{
+    background-color: rgb(107, 107, 240);
+    color: #fff;
+    border:solid 2px #111;
+    margin: 10px;
+    /* margin-bottom: 5px; */
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    width: 50%;
+
+}
+
+.heading1{
+    background-color: #fff;
+    padding: 10px 20px ;
+    text-align: justify;
+    margin: 10px;
+    /* max-width: 500px !important; */
+    max-height: 400px;
+    /* overflow: auto; */
+    overflow: scroll;
+    
+}

@@ -1,0 +1,26 @@
+/* this is default setting for all pages */
+:root{
+    --db-color:#111;
+    --text-color:#fff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+    background-color: var(--db-color);
+    
+    
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    scroll-behavior: smooth;
+    color: var(--text-color);
+}

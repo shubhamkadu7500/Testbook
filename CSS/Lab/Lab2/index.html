@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        html{
+            box-sizing: border-box;
+            height: 100%;
+        }
+        body{
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(#eb92be, #ffef78, #63c9b4);
+            font-family: 'Dosis', sans-serif;
+            font-display: swap;
+            height: inherit;
+        }
+        .container{
+            flex-basis: 400px;
+            height: 540px;
+            padding: 20px 35px;
+            background: rgba(255, 255, 255, 0.30);
+            border: 10px solid rgba(255, 255, 255, 0.34);
+            border-radius: 16px;
+            color: #232323;
+            box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+            backdrop-filter: blur(4px);
+            
+            /* backdrop-filter: blue(5.5px); */
+        }
+
+        .screen{
+            padding: 10px;
+            height: 100px;
+            background: rgba(255, 255, 255, 0.45);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+            margin-bottom: 20px;
+
+        }
+
+        .button{
+            color: #232323;
+            padding: 10px;
+            height: 365px;
+            font-size: 24px;
+            font-family: inherit;
+            background: rgba(255, 255, 255, 0.45);
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+            backdrop-filter: blur(5.5px);
+            /* -webkit-backdrop-filter: blur(5.5px); */
+        }
+
+        .container1{
+            display: flex;
+            justify-content: space-between;
+            margin: 5% 0;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+           
+        }
+        .container2{
+            display: flex;
+            justify-content: space-between;
+            margin: 5% 0;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .container3{
+            display: flex;
+            justify-content: space-between;
+            margin: 5% 0;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .container4{
+            display: flex;
+            justify-content: space-between;
+            margin: 5% 0;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        .container5{
+            display: flex;
+            justify-content: space-between;
+            margin: 5% 0;
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+        }
+        
+        .number{
+            background: #eb92be;
+            height: 50px;
+            width: 50px;
+        }
+
+        .icon{
+            background: #63c9b4;
+            height: 50px;
+            width: 50px;
+        }
+        .icon1{
+            background: #63c9b4;
+            height: 50px;
+            width: 100px;
+            grid-column: span 2;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="screen">100*2=200</div>
+        <div class="button">
+            <div class="container1">
+                <input class="icon" type="button" value="(">
+                <input class="icon" type="button" value=")">
+                <input class="icon" type="button" value="C">
+                <input class="icon" type="button" value="*">
+            </div>
+            <div class="container2">
+                <input class="number" type="button" value="7">
+                <input class="number" type="button" value="8">
+                <input class="number" type="button" value="9">
+                <input class="icon" type="button" value="/">
+            </div>
+            <div class="container3">
+                <input class="number" type="button" value="4">
+                <input class="number" type="button" value="5">
+                <input class="number" type="button" value="6">
+                <input class="icon" type="button" value="-">
+            </div>
+            <div class="container4">
+                <input class="number" type="button" value="1">
+                <input class="number" type="button" value="2">
+                <input class="number" type="button" value="3">
+                <input class="icon" type="button" value="+">
+                
+            </div>
+            <div class="container5">
+                <input class="number" type="button" value="0">
+                <input class="icon" type="button" value=".">
+                <input class="icon1" type="button" value="=">
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

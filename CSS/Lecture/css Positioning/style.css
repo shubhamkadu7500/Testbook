@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    background-color: rgb(214, 245, 255);
+}
+
+positioning of html elements
+
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    margin: 40px,0,0,40px;
+    position: absolute;
+    /* top: 20px; */
+
+
+}
+
+.item > div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 40px,0,0,40px;
+    position: relative;
+    top: 200px;
+    left: 300px;
+    
+
+}
+
+.item2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(24, 1, 1);
+    margin: 40px,0,0,40px;
+    position: relative;
+    top: 200px;
+    left: 200px;
+
+
+}

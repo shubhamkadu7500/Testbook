@@ -1,0 +1,27 @@
+/* combinaters in css */
+
+/* 1) */
+/* space combinater applying to child element only */
+/* .container p{
+    color: yellow;
+} */
+
+/* 2) */
+/* direct desendent selector */
+/* selecting direct desendent of selecting all decendent in first child */
+/* .container > p{
+    color: yellow;
+} */
+/* another exsample of decendent combinators */
+/* .container > .inside-contaner{
+    color: yellow;
+} */
+
+/* 3) */
+/* siblinng combinators - sibling means all at same level elemnts, coloring all elements but not it self*/
+/* li + li {
+    color: red;
+} */
+ul~p{
+    color: red;    
+}

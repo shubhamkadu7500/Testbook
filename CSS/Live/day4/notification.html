@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notification</title>
+    <style>
+        body{
+            font-size: 16px;
+            color: rgba(0, 0, 0, 0.7);
+        }
+
+        #notification{
+            background-color: #fff;
+            position: absolute;
+            top: 2rem;
+            right: 0;
+            border: 1px solid rgba(0, 0, 0, 0.13);
+            border-radius: 3px;
+            background-color: white;
+            padding: 2rem 4rem 2rem 2rem;
+            box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.07);
+            animation: slideleft 5s 1s 1;
+            transform: translate3d(100%, 0, 0);
+        }
+
+        @keyframes slideleft{
+            0%, 100%{
+                transform: translate3d(100%, 0, 0);
+            }
+
+            10%, 90%{
+                transform: translate3d(-2rem, 0, 0);
+            }
+        }
+
+        #notification::after{
+            content: "";
+            background-color: brown;
+            display: block;
+            width: 5px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            border-radius: 2px 0 0 2px;
+        }
+
+        #notification p{
+            margin: 0 0 1rem 0;
+
+        }
+
+        #notification p:last-child{
+            margin: 0;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="notification">
+        <p><span>Sucsses!</span></p>
+        <p>All files exported sucsessfully</p>
+    </div>
+</body>
+</html>

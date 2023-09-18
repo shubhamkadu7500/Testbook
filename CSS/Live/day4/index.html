@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeaCup</title>
+    <style>
+        *{
+            margin: 0;
+            background-color: brown;
+        }
+        .container{
+            position: absolute;
+            top: 50px;
+            left: 350px;
+            justify-content: center;
+            align-items: center;
+            box-sizing: border-box;
+            height: 550px;
+            width: 550px;
+            border: 2px solid black;
+        }
+        h1{
+            color: aquamarine;
+            font-size: 25px;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 50px;
+            left: 200px;
+        }
+
+        .cup{
+            box-sizing: border-box;
+
+        }
+
+        .cup_body{
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            top: 300px;
+            left: 100px;
+            border: 2px solid #fff;
+            border-radius: 5px 5px 90px 90px;
+            /* border-bottom-left-radius: 70px;
+            border-bottom-right-radius: 70px; */
+            background-color:#fff ;
+        }
+
+        .cup-handle{
+            height: 80px;
+            width: 80px;
+            position: absolute;
+            top: 310px;
+            left: 300px;
+            box-sizing: border-box;
+            border: 10px solid #fff;
+            border-radius: 5px 40px 80px 5px;
+        }
+
+        .soucer{
+            height: 10px;
+            width: 250px;
+            box-sizing: border-box;
+            border: 15px solid #fff;
+            border-radius: 5px 5px 30px 30px;
+            position: absolute;
+            top: 500px;
+            left: 75px;
+
+        }
+        .soucer-shadow{
+            height: 5px;
+            width: 250px;
+            box-sizing: border-box;
+            border: 2px solid black;
+            background-color: black;
+            opacity: o.4;
+            position: absolute;
+            top: 525px;
+            left: 80px;
+            z-index: 1;
+        }
+        .steam{
+            height: 20px;
+            width: 20px;
+            box-sizing: border-box;
+            border: 10px solid #fff;
+            border-radius: 50px;
+            animation: steamAnimation;
+            /* animation-timing-function: ease; */
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            stroke-dasharray: 0, 10; opacity: 0.6;
+            
+        }
+        #steam1{
+            position: absolute;
+            top: 290px;
+            left: 210px;
+            animation-duration: 6s;
+            
+        }
+        #steam2{
+            position: absolute;
+            top: 290px;
+            left: 200px;
+            animation-duration: 5s;
+        }
+        #steam3{
+            position: absolute;
+            top: 290px;
+            left: 220px;
+            animation-duration: 4s;
+        }
+        #steam4{
+            position: absolute;
+            top: 280px;
+            left: 180px;
+            animation-duration: 3s;
+        }
+
+        @keyframes steamAnimation{
+            /* 0%{
+                
+            }
+            50%{
+                
+            }
+            100%{
+                
+            } */
+
+            0% {transform: translateY(0) ;
+                box-shadow: 40px 40px  10px #444466}
+            100% {transform: translateY(var(--bounce-height));
+                box-shadow:40px 350px  250px #444466}
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Morning Tea !</h1>
+        <div class="steam" id="steam1"></div>
+        <div class="steam" id="steam2"></div>
+        <div class="steam" id="steam3"></div>
+        <div class="steam" id="steam4"></div>
+        <div class="cup">
+            <div class="cup_body"></div>
+            <div class="cup-handle"></div>
+        </div>
+        <div class="soucer"></div>
+        <div class="soucer-shadow"></div>
+    </div>
+</body>
+</html>

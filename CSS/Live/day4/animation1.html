@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation1</title>
+    <style>
+        #demo{
+            width: 100px;
+            height: 100px;
+            background-color: tomato;
+            border-radius: 30px;
+            text-align: center;
+            /* padding: 40px; */
+            position: absolute;
+            top: 100px;
+            left: 500px;
+            margin-left: auto;
+            margin-left: auto;
+            animation-name: myanimation;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            
+
+
+        }
+
+        .main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        @keyframes myanimation{
+            from{
+                background-color: tomato;
+                /* height: 100px; */
+                width: 350px;
+                top: 10px;
+            }
+
+            to{
+                background-color: rgb(106, 33, 20);
+                height: 100px;
+                width: 60px;
+                color: #fff;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Animation1 in css</h1>
+        <div id="demo" style="padding: 20px; ">
+            Shubham
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Card</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: red;
+        }
+
+        .card{
+            width: 640px;
+            height: 400px;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            border: 2px solid white;
+            /* perspective: ; */
+            transition: 1s;
+            /* this is used for smooth transition  */
+        }
+
+        .card:hover{
+            transform: rotate(-7deg);
+        }
+        .card:hover .outside{
+            transform: rotate(-130deg);
+        }
+        .outside .inside{
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            left: 50%;
+        }
+        .outside{
+            z-index: 1;
+            transform-origin: left;
+            transition: 2s;
+            cursor: pointer;
+            transform: rotatey(180deg);
+
+        }
+
+        .inside{
+            background: linear-gradient(#fff);
+            line-height: 3;
+            padding: 0 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="outside">
+            <div class="front">
+                <p>Happy Birthday</p>
+                <div class="cake">
+                    <div class="top_layer"></div>
+                    <div class="middle_layer"></div>
+                    <div class="middle_layer"></div>
+                    <div class="middle_layer"></div>
+                    
+                </div>
+            </div>
+           
+        </div>
+        <div class="inside">
+            <p>Wish you happy Birthday shubham!</p>
+            <h1>&#127873</h1> 
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+h1{
+    color: orangered;
+    /* by defoult direction is l to r */
+    /* direction: rtl; */
+    direction: ltr;
+}
+
+p{
+    color: orange;
+    direction: ltr;
+    /* starting of text from which end */
+    /* letter-spacing: 1.5px; */
+    /* space in letter and word */
+    /* word-spacing: 5px; */
+    text-indent: 3cm;
+    text-align: left;
+    width: 80%;
+    border: solid 2px #fff;
+    padding: 20px;
+    margin: 30px;
+    /* text-transform: lowercase; */
+    text-transform: capitalize;
+    /* font formating */
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bold; */
+    /* cursor: pointer; */
+    /* font-style: italic; */
+    /* font-style: unset; */
+    
+
+}
+.decoration{
+    color: #fff;
+    text-decoration: line-through;
+    /* text-decoration: underline; */
+    /* text-decoration: none; */
+
+}
+h2{
+    text-align: center;
+    /* color: #fff; */
+    margin: 50px 20px;
+    font-size: 30px;
+    text-shadow: 1px 1px 3px rgb(232, 101, 101);
+
+}

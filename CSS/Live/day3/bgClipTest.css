@@ -1,0 +1,20 @@
+/* @import url(); */
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif, cursive;
+
+}
+
+.fill-image{
+    font-size: 15vw;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ4NCTvM5_92vyQmMxYwLrqCZA2EFzWrR3VPENQhLl&s);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* diffrent for diff browser */
+    color: transparent;
+
+}

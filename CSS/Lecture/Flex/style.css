@@ -1,0 +1,33 @@
+.container{
+    background-color: #e78e8e;
+    padding: 15px;
+    height: 700px;
+    /* margin: 15px; */
+    display: flex;
+    /* flex-direction: column-reverse; */
+    /* flex-direction: column; */
+    /* flex-wrap: wrap-reverse; */
+    /* flex-flow: row wrap-reverse; */
+    /* justify-content:space-between; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: baseline; */
+    /* order: inherit; */
+    /* flex-grow: initial; */
+    /* flex-basis: 400px; */
+    /* align-self: auto; */
+    
+    
+}
+
+.item{
+    background-color: black;
+    color: #fff;
+    padding: 10px 50px;
+    margin: 10px;
+    width: 100px;
+    height: 100px;
+}
