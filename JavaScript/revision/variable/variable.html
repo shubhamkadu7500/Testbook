@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+</head>
+<body>
+    <h1>variable</h1>
+    <h2>practice code example</h2>
+    <br>
+    <p>array example</p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+
+    <script>
+        // let num1 = 10;
+        // {
+        //     console.log(num1);
+        //     let num2 = 20;
+        //     console.log(num2);
+        //     let num3 = 30;
+        // }
+        // console.log(num3);
+        // let x = 10;
+        // x = 20;
+
+        // declariang variable using const 
+        // const car = {
+        //     type:"Fiat",
+        //     color:"Red",
+        //     model:"ax500"
+        // };
+        // you can chage properties
+        // car.model = "xa400";
+        // console.log(car.model);
+        // console.log(car);
+
+        // ex 1 : -
+        // Write a simple JavaScript program that displays the redeclared variable.
+        var x = "Hello";
+        document.write(x);
+        // here x = hrllo
+        document.write(`<br>`);
+        var x = "Hello Shubham";
+        document.write(x);
+        // here we redeclare x = hello shubham
+
+        // ex 2: Write a JavaScript program with an array, and display the array, display only the element of an
+        // array, add a new element to an array, and display the modified array.
+
+        var names = ["shubham", "manoj", "raj"];
+        document.getElementById('demo').innerHTML= names;
+        console.log(names[0]);
+
+        names.push("deeraj");
+        // this add new elelmet to array at the end
+        console.log(names);
+        document.getElementById('demo1').innerHTML = names;
+
+        const name = names.pop();
+        console.log(name);
+        // this pop array element from last side
+
+
+        // ex 3 : Write a simple JavaScript program that tries to redeclare the let variable.
+        let me  = "shubham";
+        console.log(me);
+
+        {
+            let me = "deeraj";
+            console.log(me);
+            // here we can redeclare it
+        }
+        me = "manoj";
+        console.log(me);
+        // here we can redefien it only
+
+
+        // ex 4: - Write a simple JavaScript program that modifies the value of an array element and adds a new
+        // element that is declared as const and displays the array before and after modification.
+        var mobile = ["java", "lava", "carban"];
+        document.getElementById('demo2').innerHTML = mobile;
+        // here we display mobile array
+        mobile[1]= "iphone";
+        // here we repace that element with another
+
+        mobile.push("motto");
+        // here we push new element to array
+
+        document.getElementById('demo3').innerHTML = mobile;
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditions</title>
+</head>
+<body>
+    <h1>Conditions in Javascript Language</h1>
+    <p id="demo"></p>
+    <script>
+        //if condition statement 
+        // var num = 10;
+        // if(num%2 == 0){
+        //     console.log("i have executed if bloak means it is true contion");
+        // }
+
+        //else condition statement
+        // var num = 10;
+        // if(num%2 == 1){
+        //     console.log("this is true condition");
+        // }else{
+        //     console.log("this is fulse condition");
+        // }
+
+        //else if condition stement 
+        // var color = "blue";
+        // if(color == "red"){
+        //     console.log("the color is red");
+        //     document.body.style.backgroundColor = "red";
+        // }else if(color == "blue"){
+        //     console.log("the color is blue");
+        //     document.body.style.backgroundColor = "blue";
+        // }else{
+        //     console.log("the color is unknown");
+        // }
+
+        // Switch Statement
+        // var day = 3;
+        // switch(day){
+        //     case 1:
+        //         console.log("the day is one");
+        //         break;
+        //     case 2:
+        //         console.log("the day is two");
+        //         break;
+        //     case 3:
+        //         console.log("the day is three");
+        //         break;
+        //     default:
+        //         console.log("the days in not list");
+        // };
+
+        // practice code 
+        // ex 1 : 
+        //Using If/Else condition, check whether a person is eligible to vote in India or not.
+        // var age = 20;
+        // if(age >= 18){
+        //     console.log("eligiable for vote");
+        //     document.write("eligiable for vote")
+        // }else{
+        //     console.log("Not eligiable for vote");
+        //     document.write("Not eligiable for vote");
+        // }
+
+        //ex 2: 
+        // By using Date and getHours method, get the current time and display the greetings (good
+        // day/evening) depending on the time
+        // const hour = new Date().getHours();
+        // let greeting;
+        // if(hour < 12){
+        //     greeting = "good morning";
+        //     console.log(greeting);
+        // }else{
+        //     greeting = "good afternun";
+        //     console.log(greeting);
+        // }
+        // document.getElementById('demo').innerHTML=greeting; 
+
+        //ex 3 : 
+        //Display random links in your code, using Math.random() method and conditions. The
+        //Math.random() generates random numbers if that number is less than 1 that display a LinkedIn
+        //link in the output, else display indeed link in the output. The output will vary each time.
+        // let text;
+        // if(Math.random() < 1){
+        //     text = "<a href='https://www.linkedin.com'>LinkedIn</a>";
+        // }else{
+        //     text = "<a href='https://in.indeed.com/?r=us'>Indeed</a>";
+        // }
+        // document.getElementById('demo').innerHTML= text;
+        
+        //ex 4: 
+        //Display the day in the output using switch statement and Date methods.
+        // let day;
+        // switch((new Date().getDay())){
+        //     case 0:
+        //         day = "Sunday";
+        //         break;
+        //     case 1:
+        //         day = "Monday";
+        //         break;
+        //     case 2:
+        //         day = "Tuesday";
+        //         break;
+        //     case 3:
+        //         day = "Wednesday";
+        //         break;
+        //     case 4:
+        //         day = "Thursday";
+        //         break;
+        //     case 5:
+        //         day = "Friday";
+        //         break;
+        //     case 6:
+        //         day = "Saturday";
+
+        // }
+        // document.getElementById('demo').innerHTML = `the day is ${day}`;
+    </script>
+</body>
+</html>

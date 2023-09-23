@@ -70,7 +70,7 @@ or
 ************************************************************
 
 JavaScript Identifiers : 
-names given to variables, functions, parameters, classes, etc. are called Identifiers.
+names given to variables, functions, parameters, classNameNameNameNamees, etc. are called Identifiers.
 ○ Names can begin with a letter (a to z or A to Z).
 ○ Names can also begin with (_) or ($).
 ○ Variable names should not start with digits(0-9).
@@ -95,4 +95,142 @@ variable's in javascript:
 variable is data storing containers, values may variy and having unique name of variable
 types var, let, const are used to create variable
 javascript is untyped language
-let - you can not re declare this it gives error (it is block level variable)
+
+let :- you can not re declare this it gives error (it is block level variable)
+eg - let x  = 10;  let x = 20;
+it gives syntax error redeclare is not possible
+
+let and const can not acces outside block block scope, Redeclaring Variables globally and local simultaneously with let 
+keyword won’t impose a problem
+let x = 10;
+here x = 10
+{
+    let x = 20;
+    here x = 20
+}
+here x = 10
+
+var : - We can Redeclare variables with the var keyword. var keyword don’t have block scope, accessed outside the block.
+ var x = 20;
+ {
+    var x = 30;
+ }
+ x is 30 here
+
+ const : - We cannot Redeclare the variables defined with const keyword, we can redeclare the const keyword variables in another block
+ const x = 10;
+ {
+    const x = 20;
+ }
+ but here we cannot redeclare x here it gives error 
+**************************************************************************************
+
+Operator : -
+it is a symbol reserved for performing a specific task, 
+Types of Operators
+● Arithmetic Operators
+● Comparison (Relational) Operators
+● Bitwise Operators
+● Logical Operators
+● Assignment Operators
+● Miscellaneous Operator
+○ Conditional (or) Ternary Operator
+○ TypeOf Operator
+● String Operators
+
+1 Arithmetic Operator : + addition, - substraction, * multiplication, / division, ** Exponentiation(2**2=4), -- decrement, ++ increment, % modules
+2 Comparison : == Is equal to, === Identical (equal & of same type), != Not equal to, !== Not Identical, > Greater than, >= Greater than or equal to, < less than, <= less than or equal to
+3 Bitwise Operators : 
+4 Logical Operators : && and,|| or, ! reverse
+5 Assignment Operators : = Assign, += Add and assign, -= Subtract and assign, *= Multiply and assign, /= Divide and assign, %= Modulus and assign
+
+Conditional or Ternary Operator : 
+var num1 = 10;
+var num2 = 20;
+var result = (num1 > num2) ? 100 : 200;
+*****************************************************************************************************
+
+consitions : -  
+Types of Conditional Statement
+○ if
+○ else
+○ else if
+○ Switch Statement
+
+“If” : -  Statement is used when a specific block of code is to be executed, If a condition is
+true  
+eg :- if(condition){ //execute this code }
+
+“Else” Statement : - 
+● If the condition is true, then the code inside the if block will be executed.
+● If the condition is false, then the code inside the else block will be executed.
+eg: -
+if(condition){
+    //execute this code condition is true
+}else{
+    // execute this code condition is fulse
+}
+
+Else If Statement : -
+if(condiotn){
+    //execute if condition is true
+}else if(condition){
+    //execute this when condition is true
+}else{
+    //execute this if condition is fulse
+}
+
+
+Switch Statement : - 
+Switch(condition){
+    case x:
+        //execute this 
+        breake;
+    case y: 
+        //execute this 
+        breake;
+    defaulte:
+        //execute this
+};
+
+Loops : - 
+Types of Loops
+○ for
+○ for/in
+○ for/of
+○ while
+○ do/while
+
+Entry Controlled Loop: The Condition is tested before the entry of the Loop body.
+Eg: For Loop and While Loop.
+Exit Controlled Loop: The Condition is tested at the end of the Loop body. In this case the
+loop will be executed at least once irrespective of the condition.
+Eg: Do While Loop.
+
+The For Loop : 
+for(initialization, condition, increment){
+    //code be executed
+}
+
+● while loop.
+● do/while loop.
+while loop: -
+let text = "";
+let i = 0;
+while(i < 10){
+    text +="<br>The Number us "+ 1;
+    i++;
+}
+document.getElementById('demo').innerHTML = text;
+
+Nested Lopp : 
+loop run inside another loop
+outerloop{
+    innerloop{
+        //code here
+    }
+    //code here
+}
+
+it is used to print visualize table, matrix, pattern, multidimentional array.
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoWhileLoop</title>
+</head>
+<body>
+    <h1>Do While Loop</h1>
+    <p class="demo"></p>
+    <script>
+        //while loop 
+        // var x = 0;
+        // while(x < 10){
+        //     console.log('x is '+ x);
+        //     x++;
+        // }
+
+        // let text = "";
+        //     let i = 0;
+        //     while (i < 10) {
+        //         text += `<br>The Number is ${i}`;
+        //         i++;
+        //     }
+        //     console.log(text);
+
+        // var sum = 0;
+        // var input = 0;
+        // while(input != "x"){
+        //     sum += parseInt(input);
+        //     input = prompt("enter number to add or x to exit : ");
+        // }
+        // console.log("total is  " + sum);
+
+        //do while loop
+        // let x = 0;
+        // let sum = 0; 
+        // do{
+        //     console.log("x is " + x);
+        //     sum += x;
+        //     x++;
+        // }
+        // while(x < 10);
+        // console.log(sum);
+
+        var input = 0;
+        var sum = 0;
+        do{
+            sum +=parseInt(input);
+            input = prompt("plase enter the number you wont to add(for exit press x) : ");
+
+        }while(input != "x");
+        console.log(sum);
+    </script>
+</body>
+</html>

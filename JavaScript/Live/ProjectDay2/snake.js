@@ -14,15 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
     let interval = 0
 
     function startGame() {
-        currentSnake.forEach(index => squares[index].classList.remove('snake'))
-        squares[appleIndex].classList.remove('apple')
+        currentSnake.forEach(index => squares[index].classNameNameNameNameList.remove('snake'))
+        squares[appleIndex].classNameNameNameNameList.remove('apple')
         clearInterval(interval)
         randomApple()
         direction = 1
         intervalTime = 1000;
         currentSnake = [2, 1, 0]
         currentIndex=0
-        currentSnake.forEach(index => squares[index].classList.add('snake'))
+        currentSnake.forEach(index => squares[index].classNameNameNameNameList.add('snake'))
         console.log('snake position', currentSnake);
         interval = setInterval(moves, intervalTime)
         console.log(interval);
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         do {
             appleIndex = Math.floor(Math.random() * squares.length)
             console.log('the apple position', appleIndex);
-        } while (squares[appleIndex].classList.contains('snake')) {
-            squares[appleIndex].classList.add('apple')
+        } while (squares[appleIndex].classNameNameNameNameList.contains('snake')) {
+            squares[appleIndex].classNameNameNameNameList.add('apple')
         }
     }
     function moves() {
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             (currentSnake[0] - width < 0 && direction === -width) ||
             (currentSnake[0] % width === 0 && direction === -1) ||
             (currentSnake[0] % width === width-1 && direction === 1) ||
-           squares[currentSnake[0]+direction].classList.contains('snake')
+           squares[currentSnake[0]+direction].classNameNameNameNameList.contains('snake')
            )
         {
             const position = currentSnake[0];
@@ -52,22 +52,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         const tail = currentSnake.pop();
         // console.log('tail',tail);
-        squares[tail].classList.remove('snake')
+        squares[tail].classNameNameNameNameList.remove('snake')
         currentSnake.unshift(currentSnake[0] + direction)
         // console.log('move method');
         console.log('currentSnake[0]', currentSnake[0]);
         // console.log('currentSnake[1]',currentSnake[1]);
 
-        if (squares[currentSnake[0]].classList.contains('apple')) {
-            squares[currentSnake[0]].classList.remove('apple');
-            squares[tail].classList.add('snake')
+        if (squares[currentSnake[0]].classNameNameNameNameList.contains('apple')) {
+            squares[currentSnake[0]].classNameNameNameNameList.remove('apple');
+            squares[tail].classNameNameNameNameList.add('snake')
             currentSnake.push(tail)
             randomApple()
             clearInterval(interval)
             intervalTime=intervalTime*speed;
             interval=setInterval(moves,intervalTime)
         }
-        squares[currentSnake[0]].classList.add('snake')
+        squares[currentSnake[0]].classNameNameNameNameList.add('snake')
     }
 
     function control(e){
