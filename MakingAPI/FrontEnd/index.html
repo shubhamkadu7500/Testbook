@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End</title>
+    <style>
+        #menscricket,th,td{
+            border: 2px solid red;
+            border-collapse: collapse;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Cricket Mens Ranking ODI</h1>
+    <table id="menscricket">
+
+    </table>
+    <script>
+        const api_url = 'http://localhost:3000/mendata';
+
+        fetch(api_url)
+        .then((res) => res.json())
+        .then((data) => {//using babsticks
+            let newdata = `<tr>
+                <th>Nmae</th>
+                <th>Ranking</th>
+                <th>Balls</th>
+                <th>Fours</th>
+                <th>Sixes</th>
+                <th>SR</th>
+                <th>Opposition</th>`
+
+                for(let men of data){
+                        newdata +=`<tr>
+                        <td>${men.name}</td>
+                        <td>${men.ranking}</td>
+                        <td>${men.balls}</td>
+                        <td>${men.fours}</td>
+                        <td>${men.sixes}</td>
+                        <td>${men.sr}</td>
+                        <td>${men.opposition}</td>
+                    </tr>`
+                }
+                document.getElementById('menscricket').innerHTML = newdata;
+        });
+    </script>
+</body>
+</html>
