@@ -1,15 +1,26 @@
 import './App.css';
 // import Header from './components/Header';
 // import MainBar from './components/MainBar';
-import lifecycleDemo from './components/lifecycleDemo';
+//import lifecycleDemo from './components/lifecycleDemo';
+import { HelloWorld } from './HelloWorld';
 
 
 
 function App() {
+  // const welcomemessage1 = "Hello Students";
+  //passing object
+  const user = {
+    id:11,
+    text:"object data"
+  };
   return (
     <>
-    <lifecycleDemo/>
-       {/* 
+      {/* <HelloWorld welcomemessage= "Welcome in React js Tutorial"/> */}
+      {/* <HelloWorld welcomemessage={welcomemessage1}/> */}
+      {/* <HelloWorld welcomemessage={"Welcome Recat js Tutorial"}/> */}
+      <HelloWorld user={user} welcomemessage={"Welcome Recat js Tutorial"} name="Shubham" age={23}/>
+      {/* <lifecycleDemo/> */}
+      {/* 
       <lifecycleDemo/>
       <Header/>
       <h1>hello Shubham</h1>
