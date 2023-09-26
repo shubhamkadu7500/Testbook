@@ -1,2 +1,5 @@
 we can create react aplliaction with this cmd
 "npx create-react-app projectname"
+
+props is properties
+state is store the data
