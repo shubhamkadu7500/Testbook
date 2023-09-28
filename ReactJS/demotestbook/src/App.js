@@ -1,9 +1,11 @@
 import './App.css';
+// import { ArrayDemo } from './ArrayDemo';
+import { ArrayDemo1 } from './ArrayDemo1';
 // import Header from './components/Header';
 // import MainBar from './components/MainBar';
 //import lifecycleDemo from './components/lifecycleDemo';
 //import { HelloWorld } from './HelloWorld';
-import StateDemo from './StateDemo';
+// import StateDemo from './StateDemo';
 
 
 
@@ -30,7 +32,9 @@ function App() {
       <p classNameNameName="demo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae doloremque itaque sed et! Provident necessitatibus debitis nam maiores autem harum eius quisquam modi culpa architecto recusandae exercitationem perspiciatis, enim amet ratione pariatur cumque voluptates? Dolore tenetur et suscipit laboriosam, similique, repellendus dolores deserunt commodi eveniet est quis. Asperiores, vero officiis!</p>
       <br />
       <MainBar/> */}
-      <StateDemo/>
+      {/* <StateDemo/> */}
+      {/* <ArrayDemo/> */}
+      <ArrayDemo1/>
     </>
     
     // *********************************************
