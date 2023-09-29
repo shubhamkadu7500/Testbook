@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array In Javascript</title>
+</head>
+<body>
+    <h1>Array In Javascript</h1>
+    <p>types of array <br>
+    1: litrals <br>
+    2: using new Array key word <br>
+    3: using contructor or parameter</p>
+    <h2>Array Methods and Properties</h2>
+    <div id="list">
+        <ul id="listdata">
+
+        </ul>
+    </div>
+    <p class="demo"></p>
+    <script>
+        // 1st way litral
+        var students = ["Shubham", "Manoj", "Deeraj"];
+        console.log(students);
+        //2nd way using Array keyword
+        var employees = new Array();
+        employees[0] = "Shubham";
+        console.log(employees);
+        employees[1]= "Manoj";
+        console.log(employees);
+        // employees[2]="Radha";
+        // console.log(employees);
+
+        //3rd ways using cotructor parameter
+        var subject = new Array("Math", "English", "ComputerSce", "C++");
+        console.log(subject);
+        console.log(subject[0]);
+
+        //arrray methods and properties 
+        console.log(subject.length);
+        var cars = new Array();
+        cars.push("Mahindra");
+        console.log(cars); // add element into array at the last
+        cars.push("Tata");
+        cars.push("Maruti");
+        cars.push("Honda");
+        console.log(cars);
+        var last = cars.pop(); // it will pop last element of an array and removes it
+        console.log(last);
+        console.log(cars);
+
+        var first = cars.shift(); // it will pop fist element of and array and removes it
+        console.log(first);
+        console.log(cars);
+
+        cars.unshift("Mahindra"); // it will push first index of array
+        console.log(cars);
+
+        //concat to array 
+        var concat = cars.concat(subject); // it will ceate new array does not update existing array
+        console.log(concat);
+        console.log(concat.sort()); // sorting sort and update original array
+        console.log(concat);
+
+        //isArray
+        console.log(Array.isArray(concat));
+        var s = "abc";
+        console.log(Array.isArray(s));
+
+        //indexOf  -1 does not exists
+        console.log(concat.indexOf("c++"));
+        console.log(concat.indexOf("C++"));
+        console.log(concat.indexOf("Mahindra"));
+
+        //forEach()
+        //regulare method using for and using index
+        var names = ["shuabhm", "manoj", "radha", "raj", "ram", "shyam"];
+        for(var i = 0; i < names.length; i++){
+            console.log(names[i]);
+        }
+        //forEach it attrets on array not on index 
+        for(let name of names){
+            console.log(name);
+        }
+        
+
+        let a=8;
+        console.log(a);
+        function display(a){
+            console.log(a);
+            return a
+        }
+        document.getElementById('demo').innerHTML=display(10);
+        display(10);
+    </script>
+</body>
+</html>

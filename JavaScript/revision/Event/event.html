@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Event in Javascript</h1>
+    <p>showing dynamic web page using event handler here is event is onclick and event handler executional block is knows as <br>
+    type of Event handler </p>
+    <button onclick="document.getElementById('time').innerHTML=Date()">Show Time</button>
+    <div id="time"></div>
+    <div id="time" onmouseover="document.body.style.backgroundColor='blue'"
+    onmouseout="document.body.style.backgroundColor='white'">Mouse Over to chage color of page to blue</div>
+
+    <div id="alert">Shubham Jijabhau Kadu</div>
+    
+    <input type="text" id="keyevent">
+    <div id="change"></div>
+    <script>
+        var i = 0;
+        document.getElementById('alert').onmouseover = function(){
+            i++;
+            document.getElementById('change').innerHTML=i;
+        };
+        // document.getElementById('alert').onmouseup = function(){
+        //     alert('Mouse up called');
+        // };
+
+        
+        document.getElementById('alert').onmousedown = function(){
+            i++
+        };
+
+        document.getElementsById('keyevent').onkeydown  = function(){
+            document.getElementById('change').innerHTML="key is pressed";
+        }
+        document.getElementsById('keyevent').onkeyup = function(){
+            document.getElementById('change').innerHTML="key is upped";
+        }
+        document.body.onload= function(){
+            alert("you are on the page");
+        }
+    </script>
+</body>
+</html>
