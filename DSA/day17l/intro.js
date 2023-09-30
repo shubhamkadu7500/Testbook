@@ -1,12 +1,12 @@
 // linked list
-var ListNode = /** @class */ (function () {
+var ListNode = /** @classNameNameNameName */ (function () {
     function ListNode(v) {
         this.val = v;
         this.next = null;
     }
     return ListNode;
 }());
-var LinkedList = /** @class */ (function () {
+var LinkedList = /** @classNameNameNameName */ (function () {
     function LinkedList() {
         this.display = function () {
             // TC:O(N) and SC: O(1)

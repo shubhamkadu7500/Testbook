@@ -1,4 +1,4 @@
-class TreeNode{
+classNameNameNameName TreeNode{
     val: number;
     left:TreeNode | null;
     right :TreeNode | null;
@@ -29,7 +29,7 @@ function treeConstructor(arr:number[]):TreeNode | null{
 let tree = [6,16,26,-1,-1,-1,36,44,-1,-1,56,-1,-1];
 let root = treeConstructor(tree);
 
-// CLASS HAVING SAME RULE AND DEFINE ON OBJECT
+// classNameNameNameName HAVING SAME RULE AND DEFINE ON OBJECT
 let preOrder :number[] =[];
 let inOrder :number[] =[];
 let postOrder :number[] =[];

@@ -1,11 +1,11 @@
-var ListNode = /** @class */ (function () {
+var ListNode = /** @classNameNameNameName */ (function () {
     function ListNode(v) {
         this.val = v;
         this.next = null;
     }
     return ListNode;
 }());
-var LinkedList = /** @class */ (function () {
+var LinkedList = /** @classNameNameNameName */ (function () {
     function LinkedList() {
         this.addFirst = function (v) {
             var nn = new ListNode(v);
@@ -45,7 +45,7 @@ var LinkedList = /** @class */ (function () {
     }
     return LinkedList;
 }());
-var Stack = /** @class */ (function () {
+var Stack = /** @classNameNameNameName */ (function () {
     function Stack() {
         var _this = this;
         this.push = function (val) {

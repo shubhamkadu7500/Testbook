@@ -1,5 +1,5 @@
 // linked list
-class ListNode{
+classNameNameNameName ListNode{
     val : number;
     next : ListNode | null;
 
@@ -9,7 +9,7 @@ class ListNode{
     }
 }
 
-class LinkedList{
+classNameNameNameName LinkedList{
     size : number;
     head :ListNode | null;
     tail : ListNode | null;

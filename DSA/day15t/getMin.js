@@ -1,5 +1,5 @@
 // get min number in tree
-var TreeNode = /** @class */ (function () {
+var TreeNode = /** @classNameNameNameName */ (function () {
     function TreeNode(v) {
         this.val = v;
         this.left = null;

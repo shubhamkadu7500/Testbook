@@ -1,5 +1,5 @@
 // 
-class ListNode{
+classNameNameNameName ListNode{
     val : number;
     next : ListNode | null;
 
@@ -9,7 +9,7 @@ class ListNode{
     }
 }
 
-class LinkedList{
+classNameNameNameName LinkedList{
     size : number;
     head :ListNode | null;
     tail :ListNode | null;
@@ -77,10 +77,10 @@ class LinkedList{
     }
 }
 
-class LinkedList{
+classNameNameNameName LinkedList{
 
 }
-class Queue{
+classNameNameNameName Queue{
     ll:LinkedList;
     constructor(){
         this.ll = new LinkedList();

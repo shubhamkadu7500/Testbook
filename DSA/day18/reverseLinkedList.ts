@@ -1,6 +1,6 @@
 /**
  * Definition for singly-linked list.
- * class ListNode {
+ * classNameNameNameName ListNode {
  *     val: number
  *     next: ListNode | null
  *     constructor(val?: number, next?: ListNode | null) {

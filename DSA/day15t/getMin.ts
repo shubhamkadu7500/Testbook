@@ -1,5 +1,5 @@
 // get min number in tree
-class TreeNode{
+classNameNameNameName TreeNode{
     val: number;
     left:TreeNode | null;
     right :TreeNode | null;

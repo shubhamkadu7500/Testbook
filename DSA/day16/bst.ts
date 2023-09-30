@@ -1,7 +1,7 @@
 // binary search tree
 /**
  * Definition for a binary tree node.
- * class TreeNode {
+ * classNameNameNameName TreeNode {
  *     val: number
  *     left: TreeNode | null
  *     right: TreeNode | null

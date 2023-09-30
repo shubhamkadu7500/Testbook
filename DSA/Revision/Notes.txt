@@ -1,0 +1,61 @@
+Data Structure And Algorithm(DSA)
+typescript is extention of javascript. var having specific datatype need to choice
+(imp cmd chatgpt how to install nodejs
+how to install typescript cmd is npm install -g typescript
+for compile file 
+tsc filename
+node filename
+like 
+tsc intro.ts
+node intro.js)
+*************************************************************************************************
+Introduction: - 
+
+1) What is a Data Structure?
+Ans: - way of organizing real-life data in a computer so that it can be
+used effectively. It’s an intentional arrangement of a collection of data.
+means the arrangement done on purpose to impose, some kind of systematic
+organization on the data
+
+2) Why do we study Data Structure?
+Ans: - Because it’s useful, it makes our lives easier, and it’s easy to manage when you keep related
+information together.
+An example of a data structure that leads to efficient algorithms is the binary search tree (BST).
+A binary search tree is designed so that it is easy to find the minimum and maximum values of a
+set of data, yielding an algorithm that is more efficient than the best search algorithms available.
+
+***************************************************************************************************
+
+Data structures are divided into following categories: -
+1. Linear Data Structures: - 
+a. Array
+b. Stack
+c. Queue
+d. Linked List
+
+2. Non Linear Data Structures :-
+a. Graphs
+b. Trees
+
+3) What is an Algorithm?
+Ans :- a set of steps that need to be followed to solve a particular problem. These
+steps are collectively known as an algorithm.
+eg:  you have two integers "num1" and "num2" and you want to find
+the sum of those two numbers.
+1. Input two integers as “num1” and “num2”
+2. Create a variable "total_sum" to store the sum of two integers num1 and num2
+3. Store the sum of those two variables in the "sum" variable
+4. Output the "sum" variable
+
+************************************************************************************************
+
+Examples of types of Algorithms:-
+1. Simple recursive Algorithms
+2. Backtracking Algorithms
+3. Divide and conquer Algorithms
+4. Dynamic programming Algorithms
+5. Greedy Algorithms
+6. Branch and bound Algorithms
+7. Brute force Algorithms
+8. Randomized Algorithms
+

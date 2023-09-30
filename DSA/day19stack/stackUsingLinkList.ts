@@ -1,4 +1,4 @@
-class ListNode{
+classNameNameNameName ListNode{
     val:number;
     next:ListNode | null;
 
@@ -8,7 +8,7 @@ class ListNode{
     }
 }
 
-class LinkedList{
+classNameNameNameName LinkedList{
     head : ListNode | null;
     tail : ListNode | null;
     size : number;
@@ -58,7 +58,7 @@ class LinkedList{
     }
 }
 
-class Stack{
+classNameNameNameName Stack{
     ll: LinkedList;
     constructor(){
         console.log("stack contruction was called!");

@@ -1,4 +1,4 @@
-var TreeNode = /** @class */ (function () {
+var TreeNode = /** @classNameNameNameName */ (function () {
     function TreeNode(v) {
         this.val = v;
         this.left = null;
@@ -22,7 +22,7 @@ function treeConstructor(arr) {
 }
 var tree = [6, 16, 26, -1, -1, -1, 36, 44, -1, -1, 56, -1, -1];
 var root = treeConstructor(tree);
-// CLASS HAVING SAME RULE AND DEFINE ON OBJECT
+// classNameNameNameName HAVING SAME RULE AND DEFINE ON OBJECT
 var preOrder = [];
 var inOrder = [];
 var postOrder = [];
