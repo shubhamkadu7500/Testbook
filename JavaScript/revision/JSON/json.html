@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+</head>
+<body>
+    <h1>Json in javascript</h1>
+    <script>
+        //normal json
+        // let jsonObject = {
+        //     "name":"shubham",
+        //     "age":22,
+        //     "isInCity":true
+        // }
+        // console.log(jsonObject);
+        
+        //array in json
+        // let jsonObject = {
+        //     "firstname":"shubham",
+        //     "middlename":null,
+        //     "lastname":"kadu",
+        //     "age":22,
+        //     "isInCity":true,
+        //     "subject":["English", "marathi", "hindi", "telugu"],
+        //     "address":{
+        //         "city":"loni",
+        //         "country":"india"
+        //     },
+
+        // }
+        // console.log(jsonObject);
+
+
+        //conver string into json formate
+
+        let JsonObject = '{"firstname":"shubham","middlename":null,"lastname":"kadu","age":22,"isInCity":true,"subject":["English", "marathi", "hindi", "telugu"],"address":{"city":"loni","country":"india"}}';
+        console.log(JsonObject);
+
+        let JsonParseObject = JSON.parse(JsonObject);
+        console.log(JsonParseObject);
+
+        // conver json into a string 
+        let stringjson = JSON.stringify(JsonParseObject);
+        console.log(stringjson);
+
+
+    </script>
+</body>
+</html>

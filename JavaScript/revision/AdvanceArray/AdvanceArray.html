@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Array in Javascript</title>
+</head>
+<body>
+    <h1>Advance Array in javascript</h1>
+    <script>
+        //multidimentional array : array inside array are called multi dimentinal array
+        var arr1 = ["Shubham", 23, 1000];
+        var arr2 = ["Manoj", 20, 2000];
+        var arr3 = ["Dheeraj", 25, 3000];
+        var arr4 = ["Ram", 21, 4000];
+        var all = [arr1, arr2, arr3, arr4];
+        console.log(all[1][1]);
+        console.log(all[3][0]);
+
+        //using for loop
+        // for(let i=0; i < all.length;i++){
+        //     let all1 = all[i];
+        //     for(let j = 0;j< all1.length;j++){
+        //         console.log(all1[j]);
+        //     }
+        //     console.log("++++++++++++++++");
+        // } ;
+
+        //adding code into function
+
+        function run(){
+            for(let i=0; i < all.length;i++){
+            let all1 = all[i];
+            for(let j = 0;j< all1.length;j++){
+                console.log(all1[j]);
+            }
+            console.log("++++++++++++++++");
+        } ;
+        };
+        run();
+        
+
+        all[1][3]="this is notes for parent";
+        run();
+        //pushing array into 2d array
+        all.push(["raj",33, 3000]);
+        run();
+        var remove = all.pop([4]);//removes arra form 2d array
+        console.log(remove);
+        run();
+
+        //creating array and inside passing object and function
+        let myArray = [];
+        myArray[0]= Date.now;
+        myArray[1]= function(){console.log("inside array")};
+        myCars ={
+            name: "maruti", year: 2000
+        };
+        myArray[2]=myCars;
+        console.log(myArray);
+        console.log(myArray[2]);
+        console.log(myArray[1]());
+        //array methods reverse
+        console.log(all.reverse());
+        console.log(all[1].reverse());
+        //sortd, some, splice,
+        // toString
+        console.log(all.toString());
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

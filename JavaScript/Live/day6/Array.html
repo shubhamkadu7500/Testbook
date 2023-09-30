@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Mao Methods in javascript</h1>
+    <div id="demo"></div>
+    <script>
+        //this will print one by one just like for loop using foreach and map method
+        //forEach() it work like loop only
+        const fruits = ["apple", "banana", "manogo"];
+        const foreachdata = fruits.forEach((item)=>(
+            console.log(item)
+        ));
+        console.log("foreachdata",foreachdata);//undefine
+        //map() is used to shift data from one var to another var map gives permission to trasform or return
+        let mapdata =[];
+        mapdata = fruits.map((element)=>{
+            return element
+            // console.log(element);
+        });
+        console.log("mapdata",mapdata);
+
+
+        // chaecking performance of foreach and map methods
+        const marks = [11,12,13,14];
+        const foreachmarks = performance.now();
+        console.log("foreachmarks :",foreachmarks);
+        marks.forEach(x=>(x+x)*100);
+        const foreachmarks1 = performance.now();
+        console.log("foreachmarks1 :",foreachmarks1);
+
+        console.log(`forEach  speed test ${foreachmarks1-foreachmarks}`);
+//************************************************************************
+        const marksmap = performance.now();
+        console.log("marksmap :",marksmap);
+        marks.forEach(x=>(x+x)*100);
+        const marksmap1 = performance.now();
+        console.log("marksmap1 :",marksmap1);
+
+        console.log(`map speed test ${marksmap1-marksmap}`);
+
+
+        //array object
+        //filter
+        let marksAstrophysics =[
+            {name:"Shuham", marks:100},
+            {name:"Manoj", marks:101},
+            {name:"Deeraj", marks:102},
+            {name:"Shuham1", marks:103},
+            {name:"Manoj1", marks:104},
+            {name:"Deeraj1", marks:105}
+        ];
+        let highestmarks =[];
+        for(let i = 0; i < marksAstrophysics.length; i++){
+            if(marksAstrophysics[i].marks> 101){
+                highestmarks.push(marksAstrophysics[i]);
+            }
+        }
+        console.log(highestmarks);
+        console.log(marksAstrophysics.length);
+        //on other way using filter
+        let highestmarks1 = marksAstrophysics.filter((e)=>{
+            return e.marks> 101
+        });
+        console.log(highestmarks1);
+
+        //homeworks
+        //reduce method
+        //find
+        //sum mehtods
+        //slice
+
+        let studentDetails = {
+            name:"Shuham",
+            uid:22,
+            course:"full stack"
+        }
+        console.log(studentDetails);
+        document.getElementById('demo').innerHTML= studentDetails.name + " " + studentDetails.uid + " " + studentDetails.course;
+    </script>
+</body>
+</html>

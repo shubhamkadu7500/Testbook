@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>set time out</h1>
+    <button id="set" onclick="setTimeout(show, 3000)">TIMEOUT</button>
+    <p id="out"></p>
+    <script>
+        //settimeout
+        function show(){
+            alert("Hi Guys");
+        }
+        //setTimeout(show,2000);
+
+        //using arrow function
+        setTimeout(()=>{
+            alert("Suhbham");
+        },2000);
+
+        setInterval(()=>{
+            console.log("timeout plase logout")
+        },5000);
+    </script>
+</body>
+</html>

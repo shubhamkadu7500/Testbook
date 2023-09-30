@@ -170,7 +170,7 @@ if(condition){
 }else{
     // execute this code condition is fulse
 }
-
+*****************************************************************************************************
 Else If Statement : -
 if(condiotn){
     //execute if condition is true
@@ -180,7 +180,7 @@ if(condiotn){
     //execute this if condition is fulse
 }
 
-
+*****************************************************************************************************
 Switch Statement : - 
 Switch(condition){
     case x:
@@ -192,7 +192,7 @@ Switch(condition){
     defaulte:
         //execute this
 };
-
+*****************************************************************************************************
 Loops : - 
 Types of Loops
 ○ for
@@ -233,7 +233,7 @@ outerloop{
 }
 
 it is used to print visualize table, matrix, pattern, multidimentional array.
-
+*****************************************************************************************************
 Function : - 
 Code performing similar tasks can be grouped together as functions and
 can be reused any number of times.
@@ -250,7 +250,7 @@ function add (a,b){
 }
 so here hello does not print in console becose in it after the return staement 
 
-
+*****************************************************************************************************
 Event : - 
 when a user manipulate a page there will be a change in the state of the project known as event
 
@@ -266,7 +266,19 @@ arrayname[0] = "shaubham";
 2: using contructor 
 var sub = new Array("math", "history", "english");
 console.loh(sub);
-
+*****************************************************************************************************
 array methods and properties: -
+
+*****************************************************************************************************
+Objects: 
+Objects based pro language, and it is key- value  pair, key is string and value may be any thing
+Object is reference data type
+
+JSON : - javascript object notation, json in key value pair, json is language independeant json having datatype
+Number, String  
+eg let nmaes = {
+    "name":"shubham",
+    "age":22
+}
 
 

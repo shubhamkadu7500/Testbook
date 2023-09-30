@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in javascripts</title>
+</head>
+<body>
+    <h1>Objects in javascripts</h1>
+    <div id="show"></div>
+    <script>
+        // let student = {
+        //     name:"Shubham",
+        //     class:"v",
+        //     status:"pass",
+        //     totalmark:100
+        // }
+        //document.getElementById('show').innerHTML=student.name;
+        let original = 0;
+        function updatevar(x){
+            x.totalmark = 10;
+        };
+
+        // console.log("original value is :" + original);
+        // updatevar(original);
+        // console.log(updatevar(student.totalmark));
+        // updatevar(student);
+        // console.log(student.totalmark);
+        //console.log(student.name);
+
+        //object method
+        // let student = {
+        //     name:"Shubham",
+        //     class:"v",
+        //     status:"pass",
+        //     totalmark:100,
+        //     20:25,
+        //     display:function(){
+        //         console.log("student name :" + this.name + " of class : " +this.class + " has a status : " + this.status + " and got a totalmark :" + this.totalmark + " " + student[20] );
+        //     },
+        // };
+        // console.log(student);
+        // updatevar(student);
+        // student.display();
+        // console.log(student['20']);
+        
+        //objects own properties
+
+        // student.lastname= "kadu";
+        // console.log(student);
+        // console.log( student.hasOwnProperty("status"));
+        // console.log(student.firstname);
+        // console.log(student.vlaueOf());
+
+        //object constructor function
+        //calling with new keyword created object of same type
+
+        function person(first, last, age, eye){
+            this.firstname = first;
+            this.lastname= last;
+            this.age=age;
+            this.eyecolor=eye;
+            this.display=function(){console.log(this.lastname)};
+        }
+
+        var p1 = new person("Shubham", "kadu", 33, "red");
+        console.log(p1);
+        console.log(p1.firstname);
+        p1.class= 12;
+        console.log(p1);
+        p1.display();
+
+        //built in constructors 
+        //new String(), new Number(), new Boolean(), new Array(), new Object(), new RegExp(), new Function(), new Date()
+        
+        //maps in object contructor
+        let p2 = new Map();
+        p2.set("firstname", "Shuham");
+        p2.set("lastname", "kadu");
+        p2.set("age", "22");
+        p2.set("class", "pass");
+        console.log(p2);
+        p2.size;
+        p2.forEach(function(key, value){
+            console.log(value + " "+ key);
+        });
+
+
+
+
+
+    </script>
+</body>
+</html>

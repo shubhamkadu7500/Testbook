@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events and DOM in Javascripts</title>
+    <style>
+        body{
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 0, 15px;
+        }
+        div,section{
+            padding: 50px;
+            margin: 5px;
+            border: 1px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Events and DOM in javascripts</h1>
+    <p>DOM - docuemt object model. <br>
+    </p>
+    <a href="https://www.google.com" id="navlink">Google.com</a>
+    <P class="date"></P>
+
+    <h1>Accending elemetn in Dom</h1>
+    <h1>ID (#demo)</h1>
+    <div id="demo1">Acdesing me in id</div>
+
+    <h2>class(.demo2)</h2>
+    <div class="demo3">Acdesing me by tag(1)</div>
+    <div class="demo3">Acdesing me by tag(2)</div>
+
+    <h2>class(section)</h2>
+    <section class="demo4">Acdesing me by tag(1)</section>
+    <section class="demo4">Acdesing me by tag(2)</section>
+
+
+    <h2>Query Selelctor</h2>
+    <div id="queryselector1">Acdesing me by queryselector1</div>
+    <div class="queryselector2">Acdesing me by queryselector2</div>
+    <div class="queryselector3">Acdesing me by queryselector3</div>
+    <script>
+        // console.log(document);
+        document.body.style.backgroundColor ="green";
+        var navlink = document.getElementById('navlink');
+        console.log(navlink);
+        navlink.href="https://www.bing.com";
+        navlink.textContent="Bing";
+        //id selector
+        const idselector = document.getElementById('demo1');
+        idselector.style.border="yellow 1px solid";
+        //classselector
+        const idDemo1 = document.getElementsByClassName('demo3');
+        for(i=0;i < idDemo1.length; i++){
+            idDemo1[i].style.border='2px solid aqua';
+        }
+        //tagselector
+        const idDemo2 = document.getElementsByTagName('section');
+        for(i=0;i < idDemo2.length; i++){
+            idDemo2[i].style.border='2px solid black';
+        }
+
+        //query selector
+        const idDemo3 = document.querySelector('#queryselector1');
+        idDemo3.style.border="1px solid pink";
+
+        const idDemo4 = document.querySelector('#queryselector2');
+        idDemo4.style.border="1px solid red";
+
+        const idDemo4 = document.querySelector('.queryselector2');
+        idDemo4.style.border="1px solid white"
+        //date function
+        const p1 = new Date();
+        document.getElementById('date').innerHTML= p1.getTimezoneOffset;
+
+    </script>
+</body>
+</html>
