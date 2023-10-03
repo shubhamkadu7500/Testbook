@@ -3,3 +3,6 @@ we can create react aplliaction with this cmd
 
 props is properties
 state is store the data
+
+with the help of vite
+npm create vite@latest
