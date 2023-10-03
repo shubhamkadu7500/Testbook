@@ -32,18 +32,96 @@
         // }
         // console.log(jsonObject);
 
+         // **************************************************
 
         //conver string into json formate
 
-        let JsonObject = '{"firstname":"shubham","middlename":null,"lastname":"kadu","age":22,"isInCity":true,"subject":["English", "marathi", "hindi", "telugu"],"address":{"city":"loni","country":"india"}}';
-        console.log(JsonObject);
+        //let JsonObject = '{"firstname":"shubham","middlename":null,"lastname":"kadu","age":22,"isInCity":true,"subject":["English", "marathi", "hindi", "telugu"],"address":{"city":"loni","country":"india"}}';
+        //console.log(JsonObject);
 
-        let JsonParseObject = JSON.parse(JsonObject);
-        console.log(JsonParseObject);
+        //string into json
+        // let JsonParseObject = JSON.parse(JsonObject);
+        // console.log(JsonParseObject);
 
         // conver json into a string 
-        let stringjson = JSON.stringify(JsonParseObject);
-        console.log(stringjson);
+        // let stringjson = JSON.stringify(JsonParseObject);
+        // console.log(stringjson);
+
+        // let JsonObject = '{"firstname":"shubham","middlename":null,"lastname":"kadu","age":22,"isInCity":true,"subject":["English", "marathi", "hindi", "telugu"],"address":{"city":"loni","country":"india"}, ""print":function(){console.log(this.firstname);}}';
+        // console.log(JsonObject);
+
+        //we can not convert string function object into json
+        // let jsonObject1= JSON.parse(JsonObject);
+        // console.log(jsonObject1);
+
+        //so we need to convert that function into string like below
+        // let JsonObject = '{"firstname":"shubham","middlename":null,"lastname":"kadu","age":22,"isInCity":true,"subject":["English", "marathi", "hindi", "telugu"],"address":{"city":"loni","country":"india"}, "print":"function(){console.log(this.firstname);}"}';
+        // console.log(JsonObject);
+
+        //now we can convert that into json object
+        // let jsonObject1= JSON.parse(JsonObject);
+        // console.log(jsonObject1);
+
+        //and now we can convsert that string function into function like 
+        // console.log(jsonObject1.print); this is string so
+        // jsonObject1.print = eval("("+jsonObject1.print+")");
+        // console.log(jsonObject1);
+        // console.log(jsonObject1.print());
+        //here function printing values it becose javscript object not a json object
+
+
+        //any communication happent on into string formate, so 
+        //let JsonObject = {"firstname":"shubham","middlename":null,"lastname":"kadu","age":22,"isInCity":true,"subject":["English", "marathi", "hindi", "telugu"],"address":{"city":"loni","country":"india"}, "print":function(){console.log(this.firstname);}};
+        //this is javascript object now 
+        //console.log(JsonObject);
+        //so covert to string like 
+        //let JsonObject1 = JSON.stringify(JsonObject);
+        //console.log(JsonObject1);
+        
+
+        // **************************************************
+        //we can store data into local storage in browse
+        //let JsonObject = {"firstname":"shubham","middlename":null,"lastname":"kadu","age":22,"isInCity":true,"subject":["English", "marathi", "hindi", "telugu"],"address":{"city":"loni","country":"india"}, "print":function(){console.log(this.firstname);}};
+        //let jsonObject1 = JSON.stringify(JsonObject);
+        //here we store to jsonstring into on web 
+        //localStorage.setItem("JsonObject2", jsonObject1);
+        // console.log("jsonObject2");
+
+        //let getjson = localStorage.getItem("JsonObject2");
+        //console.log(getjson);
+        //now convertin ginto javascript object
+        //let getobject = JSON.parse(getjson);
+        //console.log(getobject);
+        // console.log( JSON.parse(localStorage.getItem("JsonObject"))); 
+        
+         // **************************************************
+        //use to tostring() it convert funvtion into string
+        // let JsonObject = {"firstname":"shubham","middlename":null,"lastname":"kadu","age":22,"isInCity":true,"subject":["English", "marathi", "hindi", "telugu"],"address":{"city":"loni","country":"india"}, "print":function(){console.log(this.firstname);}};
+        // JsonObject.print = JsonObject.print.toString();
+        // console.log(JsonObject);
+
+         // **************************************************
+         //how to print json object using for in loop
+        // let JsonObject = {"firstname":"shubham","middlename":null,"lastname":"kadu","age":22,"isInCity":true,"subject":["English", "marathi", "hindi", "telugu"],"address":{"city":"loni","country":"india"}, "print":function(){console.log(this.firstname);}};
+        // for(const key in JsonObject){
+        //     console.log(key + " : " + JsonObject[key]);
+        // }
+
+        // **************************************************
+        //json array 2 example
+        // let subject = ["math", "computer", "marathi"];
+        // console.log(subject);
+        // console.log(subject[2]);
+        // let marks = '[93,92,100]';
+        // let marksArray = JSON.parse(marks);
+        // console.log(marksArray);
+        // console.log(marksArray[1]);
+
+        // **************************************************
+        
+
+        
+
 
 
     </script>
