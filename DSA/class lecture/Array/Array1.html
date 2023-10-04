@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Mutation</title>
+</head>
+<body>
+    <script>
+        let num = [11,22,33,44,55];
+        num.push(66);
+        console.log(num[num.length-1]);
+        let pop = num.pop();
+        console.log(pop);
+
+        //insertion in array
+        function insertionAtIndex(num, index, target){
+            let i = num.length-1;
+            while(i> index){
+                num[i] = num[i-1];
+                i--;
+            }
+            num[i] = target;
+        }
+
+        insertionAtIndex(num, 2,23);
+        console.log(num);
+
+        //deleteItemAtIndex
+        function deleteItemAtIndex(num, index){
+            for(let i = index; i < num.length-1; i++){
+                num[i]= num[i+1];
+                
+            }
+            num[num.length-1]= null;
+        }
+        deleteItemAtIndex(num, 4);
+        console.log(num);
+
+        //update data
+        function updateAtIndex(num, index, data){
+            num[index] = data;
+        }
+        updateAtIndex(num, 2, 34);
+        console.log(num);
+
+        //swapping
+        function swapItem(num, sourceIndex, destinationIndex){
+            let temp = num[destinationIndex];
+            num[destinationIndex] = num[sourceIndex];
+            num[sourceIndex] = temp;
+        }
+        swapItem(num, 1,2);
+        console.log(num);
+    </script>
+</body>
+</html>

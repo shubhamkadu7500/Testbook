@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <h1>Array in DSA</h1>
+    <p>printing array <br>
+    array serach <br>
+    1) leaner search <br>
+    2) Binarry search 
+    </p>
+    <script>
+        let nums = [11,22,33,44,55,66,77,88,99,100];
+        for(const num in nums){
+            console.log(nums[num]);
+        };
+        //
+        //search array meathod
+        //leaner
+        function linearSearch(nums,target){
+            for(let i = 0; i < nums.length; i++){
+                if(nums[i]=== target){
+                    return i;
+                }
+            }
+            return -1;
+        }
+        let ans =  linearSearch(nums, 33);
+        console.log(ans);
+
+        //binary search
+        function binarySearch(nums, target){
+            let start = 0;
+            let end = nums.length-1;
+            while(start <= end){
+                const mid = Math.floor((start+end)/2);
+
+                if(nums[mid] === target){
+                    return mid;
+                }else if(nums[mid] > target){
+                    end = mid-1;
+                }else{
+                    start = mid+1;
+                }
+            }
+            return -1;
+        } 
+        console.log(binarySearch(nums, 44));
+
+    </script>
+</body>
+</html>
