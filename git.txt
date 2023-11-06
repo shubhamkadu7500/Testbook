@@ -1,0 +1,126 @@
+new repository
+echo "# Survay-Form" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/shubhamkadu7500/Survay-Form.git
+git push -u origin main
+https://github.com/shubhamkadu7500/Hotel_Management_App.git
+
+existing one
+git remote add origin https://github.com/shubhamkadu7500/Survay-Form.git
+git branch -M main
+git push -u origin main
+
+
+
+
+Create an interactive and user-friendly quiz app using HTML, CSS, and JavaScript.
+Design an appealing user interface with modern CSS styling to enhance the user experience.
+Utilize JavaScript to implement quiz logic, track user responses, and calculate the final score.
+Incorporate timer functionality to add a time constraint for each question, making the quiz more engaging.
+Allow users to select answers, provide instant feedback, and display the correct answers after each question.
+
+
+Subject: Application for Desktop Support Engineer / Asset Engineer / VIP Support Engineer Position
+
+Dear Hiring Manager,
+I am writing to express my keen interest in the Desktop Support Engineer / Asset Engineer / VIP Support Engineer position at your esteemed organization, as advertised in the job post.
+With a strong foundation in IT support and a passion for providing exceptional customer service, I believe I am an ideal candidate for this role. I have acquired valuable experience in desktop support, troubleshooting hardware and software issues, and managing IT assets efficiently. My proficiency in diagnosing and resolving technical problems enables me to maintain a smooth and reliable IT infrastructure for end-users.
+As a skilled Desktop Support Engineer, I have successfully supported users in diverse environments, responding promptly to queries, and resolving issues to ensure uninterrupted workflow. My experience in managing IT assets and inventory has allowed me to implement streamlined asset tracking processes, reducing costs and enhancing overall efficiency.
+Additionally, I have had the privilege of providing VIP support, catering to the specialized needs of high-level executives. My ability to handle sensitive issues with discretion, prioritize critical tasks, and maintain professionalism at all times has earned me trust and appreciation from VIP clients.
+Furthermore, I am a proactive learner, consistently staying updated with the latest technological advancements to deliver the highest standard of service. My adaptability and strong problem-solving skills allow me to quickly adapt to new environments and collaborate effectively with cross-functional teams.
+I take immense pride in my reliability and dedication to meeting tight deadlines. My strong interpersonal skills enable me to communicate technical information in a clear and understandable manner to both technical and non-technical stakeholders.
+I am confident that my skills, experience, and commitment make me an excellent fit for this role. It would be an honor to contribute my expertise to your organization's success. I look forward to the opportunity to discuss how I can contribute to the growth of your IT support team.
+Thank you for considering my application. I am excited about the possibility of joining your organization and becoming a valuable member of your team.
+
+Sincerely,
+Shubham Kadu
+9309183760.
+
+
+Dear Hiring Manager,
+
+I am interested in the Desktop Support Engineer / Asset Engineer / VIP Support Engineer position. With strong IT support skills, customer service focus, and expertise in asset management, I am confident in my ability to contribute effectively to your team. Excited about the opportunity to join your organization, I look forward to discussing further.
+
+Thank you.
+
+Sincerely,
+[Your Name]
+
+MFX Infotech Private Limited
+
+Hello sir,
+I hope this message finds you well.
+I'm Shubham Kadu, a recent graduate from Prvara Rural Engineering College,
+Pravaranagar and I'm interested in the Full stack developer position at Genesis.
+ I've been following your work for a while now and i'm really impressed with your accomplishments.
+I'm confident that i have the skill and experience that you're looking for. I'm a hard worker and
+I'm always willing to learn new things. I'm also a team player and I'm good at working under presser.
+I would really appreciate it if you would consider referring me for this position. i'v attached my
+resume for your review.
+Thank you for your time and consideration.
+Best
+Shubham Kadu
+9309183760
+
+
+res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World!');
+
+
+
+
+
+*************************************************************************************************************************************************************
+ Git Udemy
+
+(cd .. ) go back one step in command line 
+(mkdir Story ) make brand new folder
+(cd story ) change the folder access
+( ls ) list the file and folder present in accessing folder
+(touch  chapter1.txt) creating beand new file
+(notepad chapter1.txt) opening this created file
+(git init) initalizing folder to a git folder
+(ls -a)  show all file and folder are present in acceesing folder event hidden also
+(git status)  to chack the status of file like tracked nad untracked
+(git add chapter1.txt) this mean adding to git tracked 
+(git add .) adding all file that are present in accessing folder
+(git commit -m "complete chapter1")  this mean commenting message at this stage of adding
+(git log) show the commiting details of folder or files
+(git diff chapter3.txt)  this shows the diffrencess fo before saved file and after some work file status
+(git checkout chapter3.txt)  this is undo one step to recent saved
+
+(git remote add origin https://github.com/shubhamkadu7500/Story.git) remote repository link to we wont to push files and folder
+(git branch -M main) which beanch we wont to push files and folder
+(git push -u origin main) push that to we created branch
+
+working of git
+working directory ----->   starting area  ------>  local repository  ------>  remote repository 
+
+(touch gitignore)  create secrete file that does not public
+(ls -a) you can see then through this
+(notepad .gitignore)  open that secrete file in notepad
+(git rm --cached -r .)  this cmd can untrack tracked file
+(code .gitignore)  to open .gitignore file in vscode studio we can write file name that we wont to ignore here and save this, and then add file their is not file that are ignore then commit them inside .gitignore that file getting ignore to aommiting
+*************************************************
+clone to repositiry
+
+(git clone https://github.com/inolen/quakejs.git)  this cmd can clone git folder to local set folder
+
+*************************************************
+git branching and merging
+
+(git branch alien-plot) to create new branch git brnach and branch name
+(git branch) shows all brnaches that are present and show which are we selected through * sign
+(git checkout alien-plot) with help of this we can change to benach
+(git merge alien-plot)  this cmd merge to alien-plot branch to main branch
+(git push origin main -u) this push that change to main brnach repositiry presented on git 
+
+git remote add origin https://github.com/shubhamkadu7500/Story.git
+https://github.com/shubhamkadu7500/Testbook.git
+https://github.com/shubhamkadu7500/Hotel_Management_App.git
+
+
+I am a seasoned full-stack web developer with a passion for crafting dynamic and user-centric digital experiences. Over the course of my career, I have honed my skills in both front-end and back-end development, allowing me to create seamless, end-to-end solutions that not only meet but exceed client expectations. With a strong foundation in languages such as HTML, CSS, JavaScript, and a proficiency in various frameworks and libraries, I have successfully brought countless web projects to life.
