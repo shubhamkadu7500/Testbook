@@ -6,15 +6,14 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/shubhamkadu7500/Survay-Form.git
 git push -u origin main
-https://github.com/shubhamkadu7500/Hotel_Management_App.git
 
 existing one
 git remote add origin https://github.com/shubhamkadu7500/Survay-Form.git
 git branch -M main
 git push -u origin main
 
-
-
+https://github.com/shubhamkadu7500/Hotel_Management_App.git
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 Create an interactive and user-friendly quiz app using HTML, CSS, and JavaScript.
 Design an appealing user interface with modern CSS styling to enhance the user experience.
@@ -49,6 +48,8 @@ Thank you.
 Sincerely,
 [Your Name]
 
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 MFX Infotech Private Limited
 
 Hello sir,
@@ -68,8 +69,6 @@ Shubham Kadu
 
 res.writeHead(200, {'Content-Type': 'text/plain'});
   res.end('Hello World!');
-
-
 
 
 
@@ -95,7 +94,7 @@ res.writeHead(200, {'Content-Type': 'text/plain'});
 (git remote add origin https://github.com/shubhamkadu7500/Story.git) remote repository link to we wont to push files and folder
 (git branch -M main) which beanch we wont to push files and folder
 (git push -u origin main) push that to we created branch
-
+https://github.com/shubhamkadu7500/Hotel_Management_App.git
 working of git
 working directory ----->   starting area  ------>  local repository  ------>  remote repository 
 
