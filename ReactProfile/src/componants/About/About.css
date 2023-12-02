@@ -30,7 +30,7 @@
 }
 
 .about__title {
-    font-size: var(--smallfont-size);
+    font-size: var(--small-font-size);
     font-weight: var(--font-medium);
 }
 
@@ -39,7 +39,8 @@
 }
 
 .about__description {
-    padding: 0.5rem;
+    /* padding: 0.5rem; */
+    padding: 0 4rem 0 0;
     margin-bottom: 2rem;
 }
 
@@ -67,7 +68,7 @@
     .about__data {
         text-align: center;
     }
-    .abuot__info {
+    .about__info {
         justify-content: center;
     }
 
@@ -92,13 +93,3 @@
         grid-template-columns: repeat(2,1fr);
     }
 }
-
-/* .about__item {
-    font-size: 1.5rem;
-    color: var(--title-color);
-    margin-bottom: var(--mb-0-5);
-} */
-
-/* .about__info {
-        grid-template-columns: repeat(3,1fr);
-    } */

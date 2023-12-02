@@ -5,7 +5,7 @@ const Data = () => {
     <>
       <div className="home__data">
         <h1 className="home__title">
-          Shivam Kadu
+          Shubham Kadu
           <svg
             width={36}
             height={36}
@@ -56,7 +56,7 @@ const Data = () => {
             />
           </svg>
         </h1>
-        <h3 className="home__subtitle"> Visual Designer</h3>
+        <h3 className="home__subtitle"> Full Stack Developer</h3>
         <p className="home__description">
           I`m creative designer based in Pune, and I`m very passionate and
           dedicated to my work.
