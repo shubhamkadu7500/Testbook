@@ -281,4 +281,6 @@ eg let nmaes = {
     "age":22
 }
 
-
+DOM : 
+DOcument object methods
+document having inside root element html, all html element can be assessed like object 

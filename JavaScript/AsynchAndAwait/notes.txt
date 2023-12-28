@@ -1,0 +1,33 @@
+sync and async kya hain hota hai ?
+1) sync
+sync means ek ke baad dusra hogo, jab tak ek command complete naa ho, dusra shuru nahi hogo
+ex - 
+task a - 5
+task b - 2
+task c - 15
+task d - 1
+so ans is a then b then c then d 
+so total time is 23 second
+ex - 
+console.log("12");
+2) async 
+async means saare kaam ek saath shuru kardo , jiska answer pahle aajaye uska ans dedena
+task a - 5
+task b - 2
+task c - 15
+task d - 1
+so ans is d then b then a then command
+so total time is 15 second 
+
+when async use this - 
+setTimeout
+setInterval
+promises
+fetch
+axios
+XMLHttpRequest
+
+then catch callback
+async awiat
+
+
