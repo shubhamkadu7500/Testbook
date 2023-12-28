@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+   
+</head>
+<body>
+    <h1>Async</h1>
+    <script>
+        //sync example
+        console.log("Before delay");
+
+        function delayBySecond(sec){
+            let start = Date.now();
+            let now = Date.now();
+            while(now - start < (sec*1000)){
+                now = Date.now();
+            }
+        }
+        delayBySecond(5);
+        //after delay of 5 second
+        console.log("After delay");
+
+        //async
+
+        console.log("1st one");
+        setTimeout(function(){
+            console.log("2nd one");
+        }, 2000)
+        console.log("3rd one");
+
+
+        //ex
+        function first(){
+            second();
+            console.log("first");
+        }
+        function second(){
+            third();
+            console.log("second");
+
+        }
+        function third(){
+            console.log("third");
+            throw new Error("Error");
+        }
+        first();
+    </script>
+</body>
+</html>
